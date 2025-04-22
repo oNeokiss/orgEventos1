@@ -22,5 +22,10 @@ namespace orgEventos1
             frm_CadCliente frm_CadCliente = new frm_CadCliente();
             frm_CadCliente.ShowDialog();
         }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
