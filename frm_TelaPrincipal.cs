@@ -16,5 +16,11 @@ namespace orgEventos1
         {
             InitializeComponent();
         }
+
+        private void clToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_CadCliente frm_CadCliente = new frm_CadCliente();
+            frm_CadCliente.ShowDialog();
+        }
     }
 }
