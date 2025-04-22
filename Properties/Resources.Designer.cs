@@ -64,7 +64,6 @@ namespace orgEventos1.Properties {
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
         internal static System.Drawing.Bitmap EventCad {
             get {
                 object obj = ResourceManager.GetObject("EventCad", resourceCulture);
@@ -78,11 +77,6 @@ namespace orgEventos1.Properties {
         internal static System.Drawing.Bitmap EventCad__1_ {
             get {
                 object obj = ResourceManager.GetObject("EventCad (1)", resourceCulture);
-=======
-        internal static System.Drawing.Bitmap local {
-            get {
-                object obj = ResourceManager.GetObject("local", resourceCulture);
->>>>>>> Stashed changes
 =======
         internal static System.Drawing.Bitmap local {
             get {
