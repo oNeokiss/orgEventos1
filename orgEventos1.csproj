@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmCadLugar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCadLugar.Designer.cs">
-      <DependentUpon>frmCadLugar.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_CadCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,9 +60,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmCadLugar.resx">
-      <DependentUpon>frmCadLugar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm_CadCliente.resx">
       <DependentUpon>frm_CadCliente.cs</DependentUpon>
     </EmbeddedResource>
