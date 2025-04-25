@@ -33,5 +33,12 @@ namespace orgEventos1
             frm_CadLugar frm_CadLugar = new frm_CadLugar();
             frm_CadLugar.ShowDialog();
         }
+
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_ConsultaCliente frm_consultacliente = new frm_ConsultaCliente();
+            frm_consultacliente.ShowDialog();
+        }
     }
 }

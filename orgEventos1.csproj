@@ -58,6 +58,12 @@
     <Compile Include="frm_CadLugar.Designer.cs">
       <DependentUpon>frm_CadLugar.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_ConsultaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ConsultaCliente.Designer.cs">
+      <DependentUpon>frm_ConsultaCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_TelaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_CadLugar.resx">
       <DependentUpon>frm_CadLugar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ConsultaCliente.resx">
+      <DependentUpon>frm_ConsultaCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_TelaPrincipal.resx">
       <DependentUpon>frm_TelaPrincipal.cs</DependentUpon>

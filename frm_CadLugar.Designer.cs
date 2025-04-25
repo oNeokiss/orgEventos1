@@ -233,6 +233,7 @@
             this.Name = "frm_CadLugar";
             this.Text = "frm_CadLugar";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frm_CadLugar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
