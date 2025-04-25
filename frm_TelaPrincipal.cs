@@ -27,5 +27,11 @@ namespace orgEventos1
         {
             this.Close();
         }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_ConsultaCliente frm_consultacliente = new frm_ConsultaCliente();
+            frm_consultacliente.ShowDialog();
+        }
     }
 }
