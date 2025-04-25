@@ -116,5 +116,11 @@
   <ItemGroup>
     <None Include="Resources\EventCad %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\orgEventos1-DATA\orgEventos1-DATA.csproj">
+      <Project>{d5c7c788-b70e-4145-a093-b97a2eff0a3e}</Project>
+      <Name>orgEventos1-DATA</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

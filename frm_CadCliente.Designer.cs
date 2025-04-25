@@ -1,6 +1,6 @@
 ﻿namespace orgEventos1
 {
-    partial class btn_Voltar
+    partial class frm_CadCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -31,23 +31,23 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.daTime_nascCli = new System.Windows.Forms.DateTimePicker();
+            this.datPick_nascCli = new System.Windows.Forms.DateTimePicker();
             this.txt_emailCli = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.msktx_telefoneCli = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.msktx_cpfCli = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt_NomeCli = new System.Windows.Forms.TextBox();
+            this.txt_nomeCli = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.msktxt_cepCli = new System.Windows.Forms.MaskedTextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_complemento = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_numLogradouro = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txt_ = new System.Windows.Forms.TextBox();
+            this.txt_logradouro = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.btn_AddCli = new System.Windows.Forms.Button();
             this.btn_SairCadCli = new System.Windows.Forms.Button();
@@ -68,14 +68,14 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.daTime_nascCli);
+            this.groupBox1.Controls.Add(this.datPick_nascCli);
             this.groupBox1.Controls.Add(this.txt_emailCli);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.msktx_telefoneCli);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.msktx_cpfCli);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txt_NomeCli);
+            this.groupBox1.Controls.Add(this.txt_nomeCli);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(42, 95);
@@ -94,14 +94,14 @@
             this.label6.TabIndex = 9;
             this.label6.Text = "Data Nascimento:";
             // 
-            // daTime_nascCli
+            // datPick_nascCli
             // 
-            this.daTime_nascCli.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.daTime_nascCli.Location = new System.Drawing.Point(754, 72);
-            this.daTime_nascCli.MinDate = new System.DateTime(1909, 1, 1, 0, 0, 0, 0);
-            this.daTime_nascCli.Name = "daTime_nascCli";
-            this.daTime_nascCli.Size = new System.Drawing.Size(102, 22);
-            this.daTime_nascCli.TabIndex = 8;
+            this.datPick_nascCli.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.datPick_nascCli.Location = new System.Drawing.Point(754, 72);
+            this.datPick_nascCli.MinDate = new System.DateTime(1909, 1, 1, 0, 0, 0, 0);
+            this.datPick_nascCli.Name = "datPick_nascCli";
+            this.datPick_nascCli.Size = new System.Drawing.Size(102, 22);
+            this.datPick_nascCli.TabIndex = 8;
             // 
             // txt_emailCli
             // 
@@ -154,13 +154,13 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "CPF:";
             // 
-            // txt_NomeCli
+            // txt_nomeCli
             // 
-            this.txt_NomeCli.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txt_NomeCli.Location = new System.Drawing.Point(81, 35);
-            this.txt_NomeCli.Name = "txt_NomeCli";
-            this.txt_NomeCli.Size = new System.Drawing.Size(519, 22);
-            this.txt_NomeCli.TabIndex = 1;
+            this.txt_nomeCli.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_nomeCli.Location = new System.Drawing.Point(81, 35);
+            this.txt_nomeCli.Name = "txt_nomeCli";
+            this.txt_nomeCli.Size = new System.Drawing.Size(519, 22);
+            this.txt_nomeCli.TabIndex = 1;
             // 
             // label2
             // 
@@ -173,13 +173,13 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.maskedTextBox3);
+            this.groupBox2.Controls.Add(this.msktxt_cepCli);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.txt_complemento);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txt_numLogradouro);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.txt_);
+            this.groupBox2.Controls.Add(this.txt_logradouro);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(42, 295);
@@ -189,13 +189,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Endereço";
             // 
-            // maskedTextBox3
+            // msktxt_cepCli
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(477, 72);
-            this.maskedTextBox3.Mask = "00000-000";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox3.TabIndex = 10;
+            this.msktxt_cepCli.Location = new System.Drawing.Point(477, 72);
+            this.msktxt_cepCli.Mask = "00000-000";
+            this.msktxt_cepCli.Name = "msktxt_cepCli";
+            this.msktxt_cepCli.Size = new System.Drawing.Size(86, 22);
+            this.msktxt_cepCli.TabIndex = 10;
             // 
             // label9
             // 
@@ -206,14 +206,14 @@
             this.label9.TabIndex = 10;
             this.label9.Text = "CEP:";
             // 
-            // textBox4
+            // txt_complemento
             // 
-            this.textBox4.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            this.textBox4.Location = new System.Drawing.Point(319, 72);
-            this.textBox4.MaxLength = 20;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(82, 22);
-            this.textBox4.TabIndex = 9;
+            this.txt_complemento.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.txt_complemento.Location = new System.Drawing.Point(319, 72);
+            this.txt_complemento.MaxLength = 20;
+            this.txt_complemento.Name = "txt_complemento";
+            this.txt_complemento.Size = new System.Drawing.Size(82, 22);
+            this.txt_complemento.TabIndex = 9;
             // 
             // label7
             // 
@@ -224,14 +224,14 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Complemento:";
             // 
-            // textBox2
+            // txt_numLogradouro
             // 
-            this.textBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            this.textBox2.Location = new System.Drawing.Point(114, 72);
-            this.textBox2.MaxLength = 6;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(70, 22);
-            this.textBox2.TabIndex = 7;
+            this.txt_numLogradouro.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.txt_numLogradouro.Location = new System.Drawing.Point(114, 72);
+            this.txt_numLogradouro.MaxLength = 6;
+            this.txt_numLogradouro.Name = "txt_numLogradouro";
+            this.txt_numLogradouro.Size = new System.Drawing.Size(70, 22);
+            this.txt_numLogradouro.TabIndex = 7;
             // 
             // label8
             // 
@@ -242,13 +242,13 @@
             this.label8.TabIndex = 6;
             this.label8.Text = "Número:";
             // 
-            // txt_
+            // txt_logradouro
             // 
-            this.txt_.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txt_.Location = new System.Drawing.Point(114, 35);
-            this.txt_.Name = "txt_";
-            this.txt_.Size = new System.Drawing.Size(492, 22);
-            this.txt_.TabIndex = 1;
+            this.txt_logradouro.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_logradouro.Location = new System.Drawing.Point(114, 35);
+            this.txt_logradouro.Name = "txt_logradouro";
+            this.txt_logradouro.Size = new System.Drawing.Size(492, 22);
+            this.txt_logradouro.TabIndex = 1;
             // 
             // label11
             // 
@@ -268,6 +268,7 @@
             this.btn_AddCli.TabIndex = 3;
             this.btn_AddCli.Text = "Adicionar";
             this.btn_AddCli.UseVisualStyleBackColor = true;
+            this.btn_AddCli.Click += new System.EventHandler(this.btn_AddCli_Click);
             // 
             // btn_SairCadCli
             // 
@@ -280,7 +281,7 @@
             this.btn_SairCadCli.UseVisualStyleBackColor = true;
             this.btn_SairCadCli.Click += new System.EventHandler(this.btn_SairCadCli_Click);
             // 
-            // btn_Voltar
+            // frm_CadCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -291,7 +292,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Name = "btn_Voltar";
+            this.Name = "frm_CadCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro do Cliente";
             this.groupBox1.ResumeLayout(false);
@@ -307,9 +308,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txt_NomeCli;
+        private System.Windows.Forms.TextBox txt_nomeCli;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker daTime_nascCli;
+        private System.Windows.Forms.DateTimePicker datPick_nascCli;
         private System.Windows.Forms.TextBox txt_emailCli;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.MaskedTextBox msktx_telefoneCli;
@@ -318,13 +319,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_numLogradouro;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txt_;
+        private System.Windows.Forms.TextBox txt_logradouro;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_complemento;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.MaskedTextBox msktxt_cepCli;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btn_AddCli;
         private System.Windows.Forms.Button btn_SairCadCli;
