@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace orgEventos1
 {
-    public partial class frm_CadCliente : Form
+    public partial class btn_Voltar : Form
     {
-        public frm_CadCliente()
+        public btn_Voltar()
         {
             InitializeComponent();
+        }
+
+        private void btn_SairCadCli_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

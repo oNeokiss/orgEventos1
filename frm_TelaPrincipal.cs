@@ -19,7 +19,7 @@ namespace orgEventos1
 
         private void clToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frm_CadCliente frm_CadCliente = new frm_CadCliente();
+            btn_Voltar frm_CadCliente = new btn_Voltar();
             frm_CadCliente.ShowDialog();
         }
 
