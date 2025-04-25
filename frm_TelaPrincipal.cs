@@ -27,5 +27,11 @@ namespace orgEventos1
         {
             this.Close();
         }
+
+        private void lugaresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_CadLugar frm_CadLugar = new frm_CadLugar();
+            frm_CadLugar.ShowDialog();
+        }
     }
 }

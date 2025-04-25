@@ -83,6 +83,7 @@
             this.lugaresToolStripMenuItem.Name = "lugaresToolStripMenuItem";
             this.lugaresToolStripMenuItem.Size = new System.Drawing.Size(203, 30);
             this.lugaresToolStripMenuItem.Text = "Lugares";
+            this.lugaresToolStripMenuItem.Click += new System.EventHandler(this.lugaresToolStripMenuItem_Click);
             // 
             // consultaToolStripMenuItem
             // 
