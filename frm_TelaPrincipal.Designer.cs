@@ -108,6 +108,7 @@
             this.trabalhadoresToolStripMenuItem1.Name = "trabalhadoresToolStripMenuItem1";
             this.trabalhadoresToolStripMenuItem1.Size = new System.Drawing.Size(203, 30);
             this.trabalhadoresToolStripMenuItem1.Text = "Trabalhadores";
+            this.trabalhadoresToolStripMenuItem1.Click += new System.EventHandler(this.trabalhadoresToolStripMenuItem1_Click);
             // 
             // lugaresToolStripMenuItem1
             // 

@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgv_ConsultarCliente = new System.Windows.Forms.DataGridView();
             this.btn_sairConsultaCliente = new System.Windows.Forms.Button();
             this.btn_Editar = new System.Windows.Forms.Button();
             this.btn_adicionar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_excluir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBox_PesquisarCliente = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_ConsultarCliente)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dtgv_ConsultarCliente
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 118);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1138, 381);
-            this.dataGridView1.TabIndex = 0;
+            this.dtgv_ConsultarCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_ConsultarCliente.Location = new System.Drawing.Point(17, 118);
+            this.dtgv_ConsultarCliente.Name = "dtgv_ConsultarCliente";
+            this.dtgv_ConsultarCliente.Size = new System.Drawing.Size(1138, 381);
+            this.dtgv_ConsultarCliente.TabIndex = 0;
             // 
             // btn_sairConsultaCliente
             // 
@@ -79,15 +79,15 @@
             this.btn_adicionar.UseVisualStyleBackColor = true;
             this.btn_adicionar.Click += new System.EventHandler(this.btn_adicionar_Click);
             // 
-            // button1
+            // btn_excluir
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(262, 505);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 40);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Excluir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_excluir.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_excluir.Location = new System.Drawing.Point(262, 505);
+            this.btn_excluir.Name = "btn_excluir";
+            this.btn_excluir.Size = new System.Drawing.Size(116, 40);
+            this.btn_excluir.TabIndex = 4;
+            this.btn_excluir.Text = "Excluir";
+            this.btn_excluir.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -99,13 +99,13 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Consultar Cliente";
             // 
-            // textBox1
+            // txtBox_PesquisarCliente
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(689, 86);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(466, 26);
-            this.textBox1.TabIndex = 6;
+            this.txtBox_PesquisarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox_PesquisarCliente.Location = new System.Drawing.Point(689, 86);
+            this.txtBox_PesquisarCliente.Name = "txtBox_PesquisarCliente";
+            this.txtBox_PesquisarCliente.Size = new System.Drawing.Size(466, 26);
+            this.txtBox_PesquisarCliente.TabIndex = 6;
             // 
             // label2
             // 
@@ -123,16 +123,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1167, 595);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBox_PesquisarCliente);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_excluir);
             this.Controls.Add(this.btn_adicionar);
             this.Controls.Add(this.btn_Editar);
             this.Controls.Add(this.btn_sairConsultaCliente);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgv_ConsultarCliente);
             this.Name = "frm_ConsultaCliente";
             this.Text = "Consulta de Cliente";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.frm_ConsultaCliente_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_ConsultarCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,13 +141,13 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgv_ConsultarCliente;
         private System.Windows.Forms.Button btn_sairConsultaCliente;
         private System.Windows.Forms.Button btn_Editar;
         private System.Windows.Forms.Button btn_adicionar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_excluir;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBox_PesquisarCliente;
         private System.Windows.Forms.Label label2;
     }
 }

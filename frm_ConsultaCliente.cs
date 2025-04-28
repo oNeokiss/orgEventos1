@@ -29,5 +29,10 @@ namespace orgEventos1
             frm_CadCliente frmCadCliente = new frm_CadCliente();
             frmCadCliente.ShowDialog();
         }
+
+        private void frm_ConsultaCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
