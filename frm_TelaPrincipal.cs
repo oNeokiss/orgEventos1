@@ -43,8 +43,18 @@ namespace orgEventos1
 
         private void trabalhadoresToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            frm_CadTrabalhadores frm_cadtrabalhadores = new frm_CadTrabalhadores();
-            frm_cadtrabalhadores.ShowDialog();
+            frm_ConsultaTrabalhadores frm_consultatrabalhadores = new frm_ConsultaTrabalhadores();
+            frm_consultatrabalhadores.ShowDialog();
+        }
+
+        private void frm_TelaPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void trabalhadoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

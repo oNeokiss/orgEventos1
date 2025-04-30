@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace orgEventos1
 {
-    public partial class frm_CadTrabalhadores : Form
+    public partial class frm_ConsultaTrabalhadores : Form
     {
-        public frm_CadTrabalhadores()
+        public frm_ConsultaTrabalhadores()
         {
             InitializeComponent();
         }
