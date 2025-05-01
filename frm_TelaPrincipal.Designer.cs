@@ -38,7 +38,9 @@
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trabalhadoresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.lugaresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.eventosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +49,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastrosToolStripMenuItem,
             this.consultaToolStripMenuItem,
+            this.eventosToolStripMenuItem,
             this.sairToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -116,6 +119,16 @@
             this.lugaresToolStripMenuItem1.Size = new System.Drawing.Size(203, 30);
             this.lugaresToolStripMenuItem1.Text = "Lugares";
             // 
+            // eventosToolStripMenuItem
+            // 
+            this.eventosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.agendaToolStripMenuItem});
+            this.eventosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.eventosToolStripMenuItem.Name = "eventosToolStripMenuItem";
+            this.eventosToolStripMenuItem.Size = new System.Drawing.Size(89, 29);
+            this.eventosToolStripMenuItem.Text = "Eventos";
+            
+            // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -123,6 +136,12 @@
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(56, 29);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            // 
+            // agendaToolStripMenuItem
+            // 
+            this.agendaToolStripMenuItem.Name = "agendaToolStripMenuItem";
+            this.agendaToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.agendaToolStripMenuItem.Text = "Agenda";
             // 
             // frm_TelaPrincipal
             // 
@@ -156,6 +175,8 @@
         private System.Windows.Forms.ToolStripMenuItem lugaresToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem trabalhadoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trabalhadoresToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem eventosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agendaToolStripMenuItem;
     }
 }
 

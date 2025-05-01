@@ -25,6 +25,10 @@ namespace orgEventos1
         public frm_CadCliente()
         {
             InitializeComponent();
+
+            //dtpHora.Format = DateTimePickerFormat.Custom;
+            //dtpHora.CustomFormat = "HH:mm";
+            //dtpHora.ShowUpDown = true;
         }
 
         private void btn_SairCadCli_Click(object sender, EventArgs e)

@@ -41,10 +41,6 @@ namespace orgEventos1
             frm_consultacliente.ShowDialog();
         }
 
-        private void trabalhadoresToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            frm_CadTrabalhadores frm_cadtrabalhadores = new frm_CadTrabalhadores();
-            frm_cadtrabalhadores.ShowDialog();
-        }
+        
     }
 }
