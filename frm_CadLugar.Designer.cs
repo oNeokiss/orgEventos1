@@ -45,7 +45,6 @@
             this.mskb_ValorLugar = new System.Windows.Forms.MaskedTextBox();
             this.btn_sair = new System.Windows.Forms.Button();
             this.btn_Cadastrar = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -182,10 +181,9 @@
             // mskb_ValorLugar
             // 
             this.mskb_ValorLugar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskb_ValorLugar.Location = new System.Drawing.Point(392, 508);
-            this.mskb_ValorLugar.Mask = "0000000000.00";
+            this.mskb_ValorLugar.Location = new System.Drawing.Point(341, 508);
+            this.mskb_ValorLugar.Mask = "$0000.00";
             this.mskb_ValorLugar.Name = "mskb_ValorLugar";
-            this.mskb_ValorLugar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.mskb_ValorLugar.Size = new System.Drawing.Size(123, 29);
             this.mskb_ValorLugar.TabIndex = 3;
             // 
@@ -210,22 +208,11 @@
             this.btn_Cadastrar.Text = "Cadastrar";
             this.btn_Cadastrar.UseVisualStyleBackColor = true;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(334, 503);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(52, 33);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "R$";
-            // 
             // frm_CadLugar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1440, 828);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.btn_Cadastrar);
             this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.mskb_ValorLugar);
@@ -246,6 +233,7 @@
             this.Name = "frm_CadLugar";
             this.Text = "frm_CadLugar";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frm_CadLugar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,6 +258,5 @@
         private System.Windows.Forms.MaskedTextBox mskb_ValorLugar;
         private System.Windows.Forms.Button btn_sair;
         private System.Windows.Forms.Button btn_Cadastrar;
-        private System.Windows.Forms.Label label9;
     }
 }

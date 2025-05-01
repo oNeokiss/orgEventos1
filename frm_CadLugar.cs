@@ -17,7 +17,10 @@ namespace orgEventos1
             InitializeComponent();
         }
 
-        
+        private void frm_CadLugar_Load(object sender, EventArgs e)
+        {
+            InitializeComponent();
+        }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 

@@ -28,25 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtg_BuscarCli = new System.Windows.Forms.DataGridView();
+            this.dtgv_ConsultarCliente = new System.Windows.Forms.DataGridView();
             this.btn_sairConsultaCliente = new System.Windows.Forms.Button();
             this.btn_Editar = new System.Windows.Forms.Button();
             this.btn_adicionar = new System.Windows.Forms.Button();
-            this.btn_DelCli = new System.Windows.Forms.Button();
+            this.btn_excluir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_BuscarCli = new System.Windows.Forms.TextBox();
+            this.txtBox_PesquisarCliente = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btn_BuscarCli = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dtg_BuscarCli)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_ConsultarCliente)).BeginInit();
             this.SuspendLayout();
             // 
-            // dtg_BuscarCli
+            // dtgv_ConsultarCliente
             // 
-            this.dtg_BuscarCli.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtg_BuscarCli.Location = new System.Drawing.Point(17, 118);
-            this.dtg_BuscarCli.Name = "dtg_BuscarCli";
-            this.dtg_BuscarCli.Size = new System.Drawing.Size(1138, 381);
-            this.dtg_BuscarCli.TabIndex = 0;
+            this.dtgv_ConsultarCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_ConsultarCliente.Location = new System.Drawing.Point(17, 118);
+            this.dtgv_ConsultarCliente.Name = "dtgv_ConsultarCliente";
+            this.dtgv_ConsultarCliente.Size = new System.Drawing.Size(1138, 381);
+            this.dtgv_ConsultarCliente.TabIndex = 0;
             // 
             // btn_sairConsultaCliente
             // 
@@ -80,16 +79,15 @@
             this.btn_adicionar.UseVisualStyleBackColor = true;
             this.btn_adicionar.Click += new System.EventHandler(this.btn_adicionar_Click);
             // 
-            // btn_DelCli
+            // btn_excluir
             // 
-            this.btn_DelCli.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_DelCli.Location = new System.Drawing.Point(262, 505);
-            this.btn_DelCli.Name = "btn_DelCli";
-            this.btn_DelCli.Size = new System.Drawing.Size(116, 40);
-            this.btn_DelCli.TabIndex = 4;
-            this.btn_DelCli.Text = "Excluir";
-            this.btn_DelCli.UseVisualStyleBackColor = true;
-            this.btn_DelCli.Click += new System.EventHandler(this.btn_DelCli_Click);
+            this.btn_excluir.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_excluir.Location = new System.Drawing.Point(262, 505);
+            this.btn_excluir.Name = "btn_excluir";
+            this.btn_excluir.Size = new System.Drawing.Size(116, 40);
+            this.btn_excluir.TabIndex = 4;
+            this.btn_excluir.Text = "Excluir";
+            this.btn_excluir.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -101,53 +99,41 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Consultar Cliente";
             // 
-            // txt_BuscarCli
+            // txtBox_PesquisarCliente
             // 
-            this.txt_BuscarCli.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_BuscarCli.Location = new System.Drawing.Point(564, 86);
-            this.txt_BuscarCli.Name = "txt_BuscarCli";
-            this.txt_BuscarCli.Size = new System.Drawing.Size(466, 26);
-            this.txt_BuscarCli.TabIndex = 6;
+            this.txtBox_PesquisarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox_PesquisarCliente.Location = new System.Drawing.Point(689, 86);
+            this.txtBox_PesquisarCliente.Name = "txtBox_PesquisarCliente";
+            this.txtBox_PesquisarCliente.Size = new System.Drawing.Size(466, 26);
+            this.txtBox_PesquisarCliente.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(405, 84);
+            this.label2.Location = new System.Drawing.Point(530, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(153, 31);
             this.label2.TabIndex = 7;
             this.label2.Text = "Pesquisar:";
-            // 
-            // btn_BuscarCli
-            // 
-            this.btn_BuscarCli.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_BuscarCli.Location = new System.Drawing.Point(1039, 86);
-            this.btn_BuscarCli.Name = "btn_BuscarCli";
-            this.btn_BuscarCli.Size = new System.Drawing.Size(96, 26);
-            this.btn_BuscarCli.TabIndex = 8;
-            this.btn_BuscarCli.Text = "Buscar";
-            this.btn_BuscarCli.UseVisualStyleBackColor = true;
-            this.btn_BuscarCli.Click += new System.EventHandler(this.btn_BuscarCli_Click);
             // 
             // frm_ConsultaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1167, 595);
-            this.Controls.Add(this.btn_BuscarCli);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txt_BuscarCli);
+            this.Controls.Add(this.txtBox_PesquisarCliente);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_DelCli);
+            this.Controls.Add(this.btn_excluir);
             this.Controls.Add(this.btn_adicionar);
             this.Controls.Add(this.btn_Editar);
             this.Controls.Add(this.btn_sairConsultaCliente);
-            this.Controls.Add(this.dtg_BuscarCli);
+            this.Controls.Add(this.dtgv_ConsultarCliente);
             this.Name = "frm_ConsultaCliente";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de Cliente";
-            ((System.ComponentModel.ISupportInitialize)(this.dtg_BuscarCli)).EndInit();
+            this.Load += new System.EventHandler(this.frm_ConsultaCliente_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_ConsultarCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,14 +141,13 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dtg_BuscarCli;
+        private System.Windows.Forms.DataGridView dtgv_ConsultarCliente;
         private System.Windows.Forms.Button btn_sairConsultaCliente;
         private System.Windows.Forms.Button btn_Editar;
         private System.Windows.Forms.Button btn_adicionar;
-        private System.Windows.Forms.Button btn_DelCli;
+        private System.Windows.Forms.Button btn_excluir;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_BuscarCli;
+        private System.Windows.Forms.TextBox txtBox_PesquisarCliente;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btn_BuscarCli;
     }
 }

@@ -55,29 +55,17 @@
     <Compile Include="frm_CadCliente.Designer.cs">
       <DependentUpon>frm_CadCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_CadEvento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_CadEvento.Designer.cs">
-      <DependentUpon>frm_CadEvento.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_CadLugar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_CadLugar.Designer.cs">
       <DependentUpon>frm_CadLugar.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_CadServicios.cs">
+    <Compile Include="frm_CadTrabalhadores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_CadServicios.Designer.cs">
-      <DependentUpon>frm_CadServicios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_CadTrabalhador.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_CadTrabalhador.Designer.cs">
-      <DependentUpon>frm_CadTrabalhador.cs</DependentUpon>
+    <Compile Include="frm_CadTrabalhadores.Designer.cs">
+      <DependentUpon>frm_CadTrabalhadores.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_ConsultaCliente.cs">
       <SubType>Form</SubType>
@@ -96,17 +84,11 @@
     <EmbeddedResource Include="frm_CadCliente.resx">
       <DependentUpon>frm_CadCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_CadEvento.resx">
-      <DependentUpon>frm_CadEvento.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm_CadLugar.resx">
       <DependentUpon>frm_CadLugar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_CadServicios.resx">
-      <DependentUpon>frm_CadServicios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_CadTrabalhador.resx">
-      <DependentUpon>frm_CadTrabalhador.cs</DependentUpon>
+    <EmbeddedResource Include="frm_CadTrabalhadores.resx">
+      <DependentUpon>frm_CadTrabalhadores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ConsultaCliente.resx">
       <DependentUpon>frm_ConsultaCliente.cs</DependentUpon>
