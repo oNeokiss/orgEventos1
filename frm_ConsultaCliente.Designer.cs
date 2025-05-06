@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtBox_PesquisarCliente = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btn_pesqusiarCliente = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_ConsultarCliente)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,26 +103,37 @@
             // txtBox_PesquisarCliente
             // 
             this.txtBox_PesquisarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_PesquisarCliente.Location = new System.Drawing.Point(689, 86);
+            this.txtBox_PesquisarCliente.Location = new System.Drawing.Point(679, 86);
             this.txtBox_PesquisarCliente.Name = "txtBox_PesquisarCliente";
-            this.txtBox_PesquisarCliente.Size = new System.Drawing.Size(466, 26);
+            this.txtBox_PesquisarCliente.Size = new System.Drawing.Size(367, 26);
             this.txtBox_PesquisarCliente.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(530, 82);
+            this.label2.Location = new System.Drawing.Point(520, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(153, 31);
             this.label2.TabIndex = 7;
             this.label2.Text = "Pesquisar:";
+            // 
+            // btn_pesqusiarCliente
+            // 
+            this.btn_pesqusiarCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_pesqusiarCliente.Location = new System.Drawing.Point(1052, 82);
+            this.btn_pesqusiarCliente.Name = "btn_pesqusiarCliente";
+            this.btn_pesqusiarCliente.Size = new System.Drawing.Size(103, 31);
+            this.btn_pesqusiarCliente.TabIndex = 8;
+            this.btn_pesqusiarCliente.Text = "Pesquisar";
+            this.btn_pesqusiarCliente.UseVisualStyleBackColor = true;
             // 
             // frm_ConsultaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1167, 595);
+            this.Controls.Add(this.btn_pesqusiarCliente);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtBox_PesquisarCliente);
             this.Controls.Add(this.label1);
@@ -132,7 +144,6 @@
             this.Controls.Add(this.dtgv_ConsultarCliente);
             this.Name = "frm_ConsultaCliente";
             this.Text = "Consulta de Cliente";
-            
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_ConsultarCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -149,5 +160,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBox_PesquisarCliente;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btn_pesqusiarCliente;
     }
 }

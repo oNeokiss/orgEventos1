@@ -19,8 +19,8 @@ namespace orgEventos1
 
         private void clToolStripMenuItem_Click(object sender, EventArgs e) //Cad Cliente
         {
-            frm_CadCliente frm_CadCliente = new frm_CadCliente();
-            frm_CadCliente.ShowDialog();
+            frm_CadCliente frm_cadcliente = new frm_CadCliente();
+            frm_cadcliente.ShowDialog();
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e) //Sair
