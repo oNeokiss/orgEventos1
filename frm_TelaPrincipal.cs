@@ -57,11 +57,17 @@ namespace orgEventos1
         {
             frm_CadTrabalhador frm_cadtrabalhador = new frm_CadTrabalhador();
             frm_cadtrabalhador.ShowDialog();
-        }
+        }        
 
-        private void lugaresToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void lugaresToolStripMenuItem1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void pagamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPagamentos frmpagamentos = new frmPagamentos();
+            frmpagamentos.ShowDialog();
         }
     }
 }

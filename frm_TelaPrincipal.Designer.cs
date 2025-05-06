@@ -38,8 +38,8 @@
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trabalhadoresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.lugaresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pagamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,15 +118,7 @@
             this.lugaresToolStripMenuItem1.Name = "lugaresToolStripMenuItem1";
             this.lugaresToolStripMenuItem1.Size = new System.Drawing.Size(203, 30);
             this.lugaresToolStripMenuItem1.Text = "Lugares";
-            this.lugaresToolStripMenuItem1.Click += new System.EventHandler(this.lugaresToolStripMenuItem1_Click);
-            // 
-            // sairToolStripMenuItem
-            // 
-            this.sairToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(56, 29);
-            this.sairToolStripMenuItem.Text = "Sair";
-            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            this.lugaresToolStripMenuItem1.Click += new System.EventHandler(this.lugaresToolStripMenuItem1_Click_1);
             // 
             // pagamentoToolStripMenuItem
             // 
@@ -135,6 +127,14 @@
             this.pagamentoToolStripMenuItem.Size = new System.Drawing.Size(119, 29);
             this.pagamentoToolStripMenuItem.Text = "Pagamento";
             this.pagamentoToolStripMenuItem.Click += new System.EventHandler(this.pagamentoToolStripMenuItem_Click);
+            // 
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(56, 29);
+            this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // frm_TelaPrincipal
             // 
