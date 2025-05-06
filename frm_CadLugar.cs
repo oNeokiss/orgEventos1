@@ -8,10 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+using orgEventos1_DATA;
+
 namespace orgEventos1
 {
     public partial class frm_CadLugar : Form
     {
+        string _conexao = orgEventos1.Properties.Settings.Default.conexao;
+
         public frm_CadLugar()
         {
             InitializeComponent();
@@ -33,6 +38,7 @@ namespace orgEventos1
 
         private void btn_Cadastrar_Click(object sender, EventArgs e)
         {
+            Lugar lugar = new Lugar();
 
         }
     }

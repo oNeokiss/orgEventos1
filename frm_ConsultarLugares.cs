@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace orgEventos1
 {
-    public partial class frm_CadTrabalhadores : Form
+    public partial class frm_ConsultarLugares : Form
     {
-        public frm_CadTrabalhadores()
+        public frm_ConsultarLugares()
         {
             InitializeComponent();
-        }
-
-        private void btn_sairConsultarTrabalhador_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

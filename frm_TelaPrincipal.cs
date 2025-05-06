@@ -43,8 +43,14 @@ namespace orgEventos1
 
         private void trabalhadoresToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            frm_CadTrabalhadores frm_cadtrabalhadores = new frm_CadTrabalhadores();
+            frm_ConsultaTrabalhadores frm_cadtrabalhadores = new frm_ConsultaTrabalhadores();
             frm_cadtrabalhadores.ShowDialog();
+        }
+
+        private void pagamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPagamentos frmPagamentos = new frmPagamentos();
+            frmPagamentos.ShowDialog();
         }
     }
 }

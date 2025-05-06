@@ -79,11 +79,17 @@
     <Compile Include="frm_CadLugar.Designer.cs">
       <DependentUpon>frm_CadLugar.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_CadTrabalhadores.cs">
+    <Compile Include="frm_ConsultarLugares.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_CadTrabalhadores.Designer.cs">
-      <DependentUpon>frm_CadTrabalhadores.cs</DependentUpon>
+    <Compile Include="frm_ConsultarLugares.Designer.cs">
+      <DependentUpon>frm_ConsultarLugares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ConsultaTrabalhadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ConsultaTrabalhadores.Designer.cs">
+      <DependentUpon>frm_ConsultaTrabalhadores.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_ConsultaCliente.cs">
       <SubType>Form</SubType>
@@ -114,8 +120,11 @@
     <EmbeddedResource Include="frm_CadLugar.resx">
       <DependentUpon>frm_CadLugar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_CadTrabalhadores.resx">
-      <DependentUpon>frm_CadTrabalhadores.cs</DependentUpon>
+    <EmbeddedResource Include="frm_ConsultarLugares.resx">
+      <DependentUpon>frm_ConsultarLugares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ConsultaTrabalhadores.resx">
+      <DependentUpon>frm_ConsultaTrabalhadores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ConsultaCliente.resx">
       <DependentUpon>frm_ConsultaCliente.cs</DependentUpon>
