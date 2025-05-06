@@ -21,5 +21,10 @@ namespace orgEventos1
         {
 
         }
+
+        private void btn_Sair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

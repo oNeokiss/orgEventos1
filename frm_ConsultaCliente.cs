@@ -12,12 +12,31 @@ namespace orgEventos1
 {
     public partial class frm_ConsultaCliente : Form
     {
+        string _conexao = orgEventos1.Properties.Settings.Default.conexao;
+
         public frm_ConsultaCliente()
         {
             InitializeComponent();
+            ListarCliente();             // Lista os médicos cadastrados ao abrir
+            configurarDataGrid();       // Configura visualmente o DataGridView
         }
 
         
+        private void configurarDataGrid()
+        {
+
+        }
+
+
+
+        private void ListarCliente()
+        {
+
+        }
+
+
+
+
 
         private void btn_sairConsultaCliente_Click(object sender, EventArgs e)
         {
@@ -30,9 +49,6 @@ namespace orgEventos1
             frmCadCliente.ShowDialog();
         }
 
-        private void frm_ConsultaCliente_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

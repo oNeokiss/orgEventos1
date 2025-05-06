@@ -132,7 +132,7 @@
             this.Controls.Add(this.dtgv_ConsultarCliente);
             this.Name = "frm_ConsultaCliente";
             this.Text = "Consulta de Cliente";
-            this.Load += new System.EventHandler(this.frm_ConsultaCliente_Load);
+            
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_ConsultarCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
