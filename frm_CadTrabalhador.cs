@@ -31,7 +31,32 @@ namespace orgEventos1
             Trabalhador trabalhador = new Trabalhador();
             //Trabalhador_DAO trabalhador_DAO = new Trabalhador_DAO(_conexao);
 
-            
+            if (string.IsNullOrWhiteSpace(txtbox_nomeTrab.Text))
+            {
+                MessageBox.Show("Por favor, preencha todos os campos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                trabalhador.Nome = txtbox_nomeTrab.Text;
+                trabalhador.Cpf = msktx_cpfTrab.Text;
+                trabalhador.Telefone = msktx_telefoneTrab.Text;
+                trabalhador.Email = txtBox_emailTrab.Text;
+                
+
+                
+
+                MessageBox.Show("Cadastro com Sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                txtbox_nomeTrab.Text = string.Empty;
+                msktx_cpfTrab.Text = string.Empty;
+                msktx_telefoneTrab.Text = string.Empty;
+                txtBox_emailTrab.Text = string.Empty;
+                
+
+
+            }
+
+
         }
 
     }
