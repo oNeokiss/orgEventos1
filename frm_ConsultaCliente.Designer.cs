@@ -105,7 +105,7 @@
             this.txtBox_PesquisarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBox_PesquisarCliente.Location = new System.Drawing.Point(679, 86);
             this.txtBox_PesquisarCliente.Name = "txtBox_PesquisarCliente";
-            this.txtBox_PesquisarCliente.Size = new System.Drawing.Size(367, 26);
+            this.txtBox_PesquisarCliente.Size = new System.Drawing.Size(466, 26);
             this.txtBox_PesquisarCliente.TabIndex = 6;
             // 
             // label2

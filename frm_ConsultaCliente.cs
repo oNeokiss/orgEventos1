@@ -29,6 +29,8 @@ namespace orgEventos1
             dtgv_ConsultarCliente.RowHeadersWidth = 25; // Largura do cabeçalho das linhas
             dtgv_ConsultarCliente.ReadOnly = true; // Impede edição direta na grade
 
+            dtgv_ConsultarCliente.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
             // Configuração de cada coluna do DataGrid
             // Para cada coluna: define autoajuste, alinhamento, padding e cabeçalho
             dtgv_ConsultarCliente.Columns["id_cliente"].AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
@@ -37,107 +39,54 @@ namespace orgEventos1
             dtgv_ConsultarCliente.Columns["id_cliente"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
             dtgv_ConsultarCliente.Columns["id_cliente"].HeaderText = "codigo";
 
-            //dtg_BuscarPac.Columns["nomePac"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            //dtg_BuscarPac.Columns["nomePac"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["nomePac"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["nomePac"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
-            //dtg_BuscarPac.Columns["nomePac"].HeaderText = "Nome";
+            //dtgv_ConsultarCliente.Columns["nome"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dtgv_ConsultarCliente.Columns["nome"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dtgv_ConsultarCliente.Columns["nome"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dtgv_ConsultarCliente.Columns["nome"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
+            dtgv_ConsultarCliente.Columns["nome"].HeaderText = "Nome";
 
-            //dtg_BuscarPac.Columns["cpfPac"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            //dtg_BuscarPac.Columns["cpfPac"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["cpfPac"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["cpfPac"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
-            //dtg_BuscarPac.Columns["cpfPac"].HeaderText = "CPF";
 
-            //dtg_BuscarPac.Columns["nascPac"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            //dtg_BuscarPac.Columns["nascPac"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["nascPac"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["nascPac"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
-            //dtg_BuscarPac.Columns["nascPac"].HeaderText = "Data Nascimento";
+            //dtgv_ConsultarCliente.Columns["cpf"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dtgv_ConsultarCliente.Columns["cpf"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dtgv_ConsultarCliente.Columns["cpf"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dtgv_ConsultarCliente.Columns["cpf"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
+            dtgv_ConsultarCliente.Columns["cpf"].HeaderText = "CPF";
 
-            //dtg_BuscarPac.Columns["celPac"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            //dtg_BuscarPac.Columns["celPac"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["celPac"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["celPac"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
-            //dtg_BuscarPac.Columns["celPac"].HeaderText = "Telefone";
+            //dtgv_ConsultarCliente.Columns["telefone"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dtgv_ConsultarCliente.Columns["telefone"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dtgv_ConsultarCliente.Columns["telefone"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dtgv_ConsultarCliente.Columns["telefone"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
+            dtgv_ConsultarCliente.Columns["telefone"].HeaderText = "Telefone";
 
-            //dtg_BuscarPac.Columns["emailPac"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            //dtg_BuscarPac.Columns["emailPac"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["emailPac"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["emailPac"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
-            //dtg_BuscarPac.Columns["emailPac"].HeaderText = "e-mail";
+            //dtgv_ConsultarCliente.Columns["email"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dtgv_ConsultarCliente.Columns["email"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dtgv_ConsultarCliente.Columns["email"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dtgv_ConsultarCliente.Columns["email"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
+            dtgv_ConsultarCliente.Columns["email"].HeaderText = "E-Mail";
 
-            //dtg_BuscarPac.Columns["estCivilPac"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            //dtg_BuscarPac.Columns["estCivilPac"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["estCivilPac"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["estCivilPac"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
-            //dtg_BuscarPac.Columns["estCivilPac"].HeaderText = "Estado Civil";
+            //dtgv_ConsultarCliente.Columns["dataNasc"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dtgv_ConsultarCliente.Columns["dataNasc"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dtgv_ConsultarCliente.Columns["dataNasc"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dtgv_ConsultarCliente.Columns["dataNasc"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
+            dtgv_ConsultarCliente.Columns["dataNasc"].HeaderText = "Data Nascimento";
 
-            //dtg_BuscarPac.Columns["tipSangPac"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            //dtg_BuscarPac.Columns["tipSangPac"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["tipSangPac"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["tipSangPac"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
-            //dtg_BuscarPac.Columns["tipSangPac"].HeaderText = "Tipo Sanguineo";
+            //dtgv_ConsultarCliente.Columns["logradouro"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dtgv_ConsultarCliente.Columns["logradouro"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dtgv_ConsultarCliente.Columns["logradouro"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dtgv_ConsultarCliente.Columns["logradouro"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
+            dtgv_ConsultarCliente.Columns["logradouro"].HeaderText = "Logradouro";
 
-            //dtg_BuscarPac.Columns["rhPac"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            //dtg_BuscarPac.Columns["rhPac"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["rhPac"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["rhPac"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
-            //dtg_BuscarPac.Columns["rhPac"].HeaderText = "RH";
+            //dtgv_ConsultarCliente.Columns["numLogradouro"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dtgv_ConsultarCliente.Columns["numLogradouro"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dtgv_ConsultarCliente.Columns["numLogradouro"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dtgv_ConsultarCliente.Columns["numLogradouro"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
+            dtgv_ConsultarCliente.Columns["numLogradouro"].HeaderText = "Número";
 
-            //dtg_BuscarPac.Columns["cepPac"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            //dtg_BuscarPac.Columns["cepPac"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["cepPac"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["cepPac"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
-            //dtg_BuscarPac.Columns["cepPac"].HeaderText = "CEP";
-
-            //dtg_BuscarPac.Columns["logradouroPac"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            //dtg_BuscarPac.Columns["logradouroPac"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["logradouroPac"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["logradouroPac"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
-            //dtg_BuscarPac.Columns["logradouroPac"].HeaderText = "Logradouro";
-
-            //dtg_BuscarPac.Columns["numLogradouroPac"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            //dtg_BuscarPac.Columns["numLogradouroPac"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["numLogradouroPac"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["numLogradouroPac"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
-            //dtg_BuscarPac.Columns["numLogradouroPac"].HeaderText = "Número";
-
-            //dtg_BuscarPac.Columns["bairroPac"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            //dtg_BuscarPac.Columns["bairroPac"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["bairroPac"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["bairroPac"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
-            //dtg_BuscarPac.Columns["bairroPac"].HeaderText = "Bairro";
-
-            //dtg_BuscarPac.Columns["ufPac"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            //dtg_BuscarPac.Columns["ufPac"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["ufPac"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["ufPac"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
-            //dtg_BuscarPac.Columns["ufPac"].HeaderText = "UF";
-
-            //dtg_BuscarPac.Columns["complementoPac"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            //dtg_BuscarPac.Columns["complementoPac"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["complementoPac"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["complementoPac"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
-            //dtg_BuscarPac.Columns["complementoPac"].HeaderText = "Complemento";
-
-            //dtg_BuscarPac.Columns["cidadePac"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            //dtg_BuscarPac.Columns["cidadePac"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["cidadePac"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["cidadePac"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
-            //dtg_BuscarPac.Columns["cidadePac"].HeaderText = "Cidade";
-
-            //dtg_BuscarPac.Columns["nomeAcomp"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            //dtg_BuscarPac.Columns["nomeAcomp"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["nomeAcomp"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["nomeAcomp"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
-            //dtg_BuscarPac.Columns["nomeAcomp"].HeaderText = "Acompanhante";
-
-            //dtg_BuscarPac.Columns["celAcomp"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            //dtg_BuscarPac.Columns["celAcomp"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["celAcomp"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dtg_BuscarPac.Columns["celAcomp"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
-            //dtg_BuscarPac.Columns["celAcomp"].HeaderText = "Telefone Acomphante";
+            //dtgv_ConsultarCliente.Columns["complemento"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dtgv_ConsultarCliente.Columns["complemento"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dtgv_ConsultarCliente.Columns["complemento"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dtgv_ConsultarCliente.Columns["complemento"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
+            dtgv_ConsultarCliente.Columns["complemento"].HeaderText = "Complemento";           
 
 
         }
