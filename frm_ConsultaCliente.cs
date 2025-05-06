@@ -122,6 +122,19 @@ namespace orgEventos1
             frmCadCliente.ShowDialog();
         }
 
-        
+        private void btn_pesqusiarCliente_Click(object sender, EventArgs e)
+        {
+            if (txtBox_PesquisarCliente.Text == "")
+            {
+                // Exibe mensagem de alerta
+                MessageBox.Show("Informe um conteúdo!");
+                txtBox_PesquisarCliente.Focus(); // Foca no campo de texto
+                ListarCliente();
+                return;
+            }
+
+            ListarCliente(); // Executa a busca
+
+        }
     }
 }
