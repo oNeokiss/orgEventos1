@@ -39,6 +39,7 @@
             this.trabalhadoresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.lugaresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pagamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +48,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastrosToolStripMenuItem,
             this.consultaToolStripMenuItem,
-            this.sairToolStripMenuItem});
+            this.sairToolStripMenuItem,
+            this.pagamentoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1440, 33);
@@ -126,6 +128,14 @@
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
+            // pagamentoToolStripMenuItem
+            // 
+            this.pagamentoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pagamentoToolStripMenuItem.Name = "pagamentoToolStripMenuItem";
+            this.pagamentoToolStripMenuItem.Size = new System.Drawing.Size(119, 29);
+            this.pagamentoToolStripMenuItem.Text = "Pagamento";
+            this.pagamentoToolStripMenuItem.Click += new System.EventHandler(this.pagamentoToolStripMenuItem_Click);
+            // 
             // frm_TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,6 +169,7 @@
         private System.Windows.Forms.ToolStripMenuItem lugaresToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem trabalhadoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trabalhadoresToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem pagamentoToolStripMenuItem;
     }
 }
 
