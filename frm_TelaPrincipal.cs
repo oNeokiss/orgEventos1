@@ -17,45 +17,34 @@ namespace orgEventos1
             InitializeComponent();
         }
 
-        private void clToolStripMenuItem_Click(object sender, EventArgs e) //Cad Cliente
+        private void clToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frm_CadCliente frm_cadcliente = new frm_CadCliente();
-            frm_cadcliente.ShowDialog();
+            frm_CadCliente frm_CadCliente = new frm_CadCliente();
+            frm_CadCliente.ShowDialog();
         }
 
-        private void sairToolStripMenuItem_Click(object sender, EventArgs e) //Sair
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void lugaresToolStripMenuItem_Click(object sender, EventArgs e) //Cad Lugar
+        private void lugaresToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frm_CadLugar frm_CadLugar = new frm_CadLugar();
             frm_CadLugar.ShowDialog();
         }
 
 
-        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)  //Consultar Cliente
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frm_ConsultaCliente frm_consultacliente = new frm_ConsultaCliente();
             frm_consultacliente.ShowDialog();
         }
 
-        private void trabalhadoresToolStripMenuItem1_Click(object sender, EventArgs e) //Consultar Trabalhadores
+        private void trabalhadoresToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            frm_ConsultaTrabalhadores frm_consultatrabalhadores = new frm_ConsultaTrabalhadores();
-            frm_consultatrabalhadores.ShowDialog();
-        }
-
-        private void frm_TelaPrincipal_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void trabalhadoresToolStripMenuItem_Click(object sender, EventArgs e) //Cad trabalhadores
-        {
-            frm_CadTrabalhador frm_cadtrabalhador = new frm_CadTrabalhador();
-            frm_cadtrabalhador.ShowDialog();
+            frm_ConsultaTrabalhadores frm_cadtrabalhadores = new frm_ConsultaTrabalhadores();
+            frm_cadtrabalhadores.ShowDialog();
         }
 
         private void lugaresToolStripMenuItem1_Click(object sender, EventArgs e) //Consultar Lugares
