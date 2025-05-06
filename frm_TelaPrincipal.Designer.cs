@@ -79,6 +79,7 @@
             this.trabalhadoresToolStripMenuItem.Name = "trabalhadoresToolStripMenuItem";
             this.trabalhadoresToolStripMenuItem.Size = new System.Drawing.Size(203, 30);
             this.trabalhadoresToolStripMenuItem.Text = "Trabalhadores";
+            this.trabalhadoresToolStripMenuItem.Click += new System.EventHandler(this.trabalhadoresToolStripMenuItem_Click);
             // 
             // lugaresToolStripMenuItem
             // 
@@ -117,6 +118,7 @@
             this.lugaresToolStripMenuItem1.Name = "lugaresToolStripMenuItem1";
             this.lugaresToolStripMenuItem1.Size = new System.Drawing.Size(203, 30);
             this.lugaresToolStripMenuItem1.Text = "Lugares";
+            this.lugaresToolStripMenuItem1.Click += new System.EventHandler(this.lugaresToolStripMenuItem1_Click);
             // 
             // sairToolStripMenuItem
             // 
@@ -148,6 +150,7 @@
             this.Name = "frm_TelaPrincipal";
             this.Text = "EventCad";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frm_TelaPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

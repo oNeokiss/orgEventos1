@@ -52,7 +52,7 @@ namespace orgEventos1
                 cliente.numLogradouro = txt_numLogradouro.Text;
                 cliente.complemento = txt_complemento.Text;
 
-                //cliente_DAO.IncluirCliente(cliente);
+                cliente_DAO.IncluirCliente(cliente);
 
                 MessageBox.Show("Cadastro com Sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -66,6 +66,11 @@ namespace orgEventos1
 
 
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

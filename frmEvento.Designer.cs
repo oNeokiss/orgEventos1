@@ -66,6 +66,7 @@
             this.btn_Sair.TabIndex = 8;
             this.btn_Sair.Text = "Sair";
             this.btn_Sair.UseVisualStyleBackColor = true;
+            this.btn_Sair.Click += new System.EventHandler(this.btn_Sair_Click);
             // 
             // btn_Cadastrar
             // 
