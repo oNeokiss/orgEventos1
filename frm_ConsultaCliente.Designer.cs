@@ -105,7 +105,7 @@
             this.txtBox_PesquisarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBox_PesquisarCliente.Location = new System.Drawing.Point(679, 86);
             this.txtBox_PesquisarCliente.Name = "txtBox_PesquisarCliente";
-            this.txtBox_PesquisarCliente.Size = new System.Drawing.Size(466, 26);
+            this.txtBox_PesquisarCliente.Size = new System.Drawing.Size(368, 26);
             this.txtBox_PesquisarCliente.TabIndex = 6;
             // 
             // label2
@@ -121,7 +121,7 @@
             // btn_pesqusiarCliente
             // 
             this.btn_pesqusiarCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_pesqusiarCliente.Location = new System.Drawing.Point(1052, 82);
+            this.btn_pesqusiarCliente.Location = new System.Drawing.Point(1053, 82);
             this.btn_pesqusiarCliente.Name = "btn_pesqusiarCliente";
             this.btn_pesqusiarCliente.Size = new System.Drawing.Size(103, 31);
             this.btn_pesqusiarCliente.TabIndex = 8;
