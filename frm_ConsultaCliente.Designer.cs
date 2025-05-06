@@ -104,7 +104,7 @@
             this.txtBox_PesquisarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBox_PesquisarCliente.Location = new System.Drawing.Point(689, 86);
             this.txtBox_PesquisarCliente.Name = "txtBox_PesquisarCliente";
-            this.txtBox_PesquisarCliente.Size = new System.Drawing.Size(466, 26);
+            this.txtBox_PesquisarCliente.Size = new System.Drawing.Size(322, 26);
             this.txtBox_PesquisarCliente.TabIndex = 6;
             // 
             // label2
@@ -132,7 +132,6 @@
             this.Controls.Add(this.dtgv_ConsultarCliente);
             this.Name = "frm_ConsultaCliente";
             this.Text = "Consulta de Cliente";
-            
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_ConsultarCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
