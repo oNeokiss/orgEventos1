@@ -58,9 +58,10 @@ namespace orgEventos1
             frm_cadtrabalhador.ShowDialog();
         }
 
-        private void lugaresToolStripMenuItem1_Click(object sender, EventArgs e) //
+        private void lugaresToolStripMenuItem1_Click(object sender, EventArgs e) //Consultar Lugares
         {
-            
+            frm_ConsultaLugares frm_consultalugares = new frm_ConsultaLugares();
+            frm_consultalugares.ShowDialog();
         }
     }
 }

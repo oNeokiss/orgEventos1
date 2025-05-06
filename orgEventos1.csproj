@@ -85,6 +85,12 @@
     <Compile Include="frm_CadTrabalhador.Designer.cs">
       <DependentUpon>frm_CadTrabalhador.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_ConsultaLugares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ConsultaLugares.Designer.cs">
+      <DependentUpon>frm_ConsultaLugares.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_ConsultaTrabalhadores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_CadTrabalhador.resx">
       <DependentUpon>frm_CadTrabalhador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ConsultaLugares.resx">
+      <DependentUpon>frm_ConsultaLugares.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ConsultaTrabalhadores.resx">
       <DependentUpon>frm_ConsultaTrabalhadores.cs</DependentUpon>
