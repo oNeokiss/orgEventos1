@@ -127,6 +127,7 @@
             this.btn_pesqusiarCliente.TabIndex = 8;
             this.btn_pesqusiarCliente.Text = "Pesquisar";
             this.btn_pesqusiarCliente.UseVisualStyleBackColor = true;
+            this.btn_pesqusiarCliente.Click += new System.EventHandler(this.btn_pesqusiarCliente_Click);
             // 
             // frm_ConsultaCliente
             // 

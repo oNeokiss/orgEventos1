@@ -52,5 +52,16 @@ namespace orgEventos1
             frmPagamentos frmPagamentos = new frmPagamentos();
             frmPagamentos.ShowDialog();
         }
+
+        private void trabalhadoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_CadTrabalhador frm_cadtrabalhador = new frm_CadTrabalhador();
+            frm_cadtrabalhador.ShowDialog();
+        }
+
+        private void lugaresToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
