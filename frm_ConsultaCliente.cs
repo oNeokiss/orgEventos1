@@ -25,12 +25,17 @@ namespace orgEventos1
         private void configurarDataGrid()
         {
 
+
+
         }
 
 
 
         private void ListarCliente()
         {
+
+
+
 
         }
 
