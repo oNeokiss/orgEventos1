@@ -21,5 +21,12 @@ namespace orgEventos1
         {
             this.Close();
         }
+
+        private void btn_adicionarTrabalhador_Click(object sender, EventArgs e)
+        {
+            frm_CadTrabalhador frm_cadtrabalhador = new frm_CadTrabalhador();
+            frm_cadtrabalhador.ShowDialog();
+        }
     }
+    
 }

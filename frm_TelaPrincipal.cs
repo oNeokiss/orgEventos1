@@ -17,31 +17,31 @@ namespace orgEventos1
             InitializeComponent();
         }
 
-        private void clToolStripMenuItem_Click(object sender, EventArgs e)
+        private void clToolStripMenuItem_Click(object sender, EventArgs e) //Cad Cliente
         {
             frm_CadCliente frm_CadCliente = new frm_CadCliente();
             frm_CadCliente.ShowDialog();
         }
 
-        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e) //Sair
         {
             this.Close();
         }
 
-        private void lugaresToolStripMenuItem_Click(object sender, EventArgs e)
+        private void lugaresToolStripMenuItem_Click(object sender, EventArgs e) //Cad Lugar
         {
             frm_CadLugar frm_CadLugar = new frm_CadLugar();
             frm_CadLugar.ShowDialog();
         }
 
 
-        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)  //Consultar Cliente
         {
             frm_ConsultaCliente frm_consultacliente = new frm_ConsultaCliente();
             frm_consultacliente.ShowDialog();
         }
 
-        private void trabalhadoresToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void trabalhadoresToolStripMenuItem1_Click(object sender, EventArgs e) //Consultar Trabalhadores
         {
             frm_ConsultaTrabalhadores frm_consultatrabalhadores = new frm_ConsultaTrabalhadores();
             frm_consultatrabalhadores.ShowDialog();
@@ -52,7 +52,13 @@ namespace orgEventos1
 
         }
 
-        private void trabalhadoresToolStripMenuItem_Click(object sender, EventArgs e)
+        private void trabalhadoresToolStripMenuItem_Click(object sender, EventArgs e) //Cad trabalhadores
+        {
+            frm_CadTrabalhador frm_cadtrabalhador = new frm_CadTrabalhador();
+            frm_cadtrabalhador.ShowDialog();
+        }
+
+        private void lugaresToolStripMenuItem1_Click(object sender, EventArgs e) //
         {
             
         }

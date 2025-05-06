@@ -86,6 +86,7 @@
             this.btn_adicionarTrabalhador.TabIndex = 11;
             this.btn_adicionarTrabalhador.Text = "Adicionar";
             this.btn_adicionarTrabalhador.UseVisualStyleBackColor = true;
+            this.btn_adicionarTrabalhador.Click += new System.EventHandler(this.btn_adicionarTrabalhador_Click);
             // 
             // btn_EditarTrabalhador
             // 
@@ -116,7 +117,7 @@
             this.dtgv_ConsultarTrabalhador.Size = new System.Drawing.Size(1138, 381);
             this.dtgv_ConsultarTrabalhador.TabIndex = 8;
             // 
-            // frm_CadTrabalhadores
+            // frm_ConsultaTrabalhadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -129,7 +130,7 @@
             this.Controls.Add(this.btn_EditarTrabalhador);
             this.Controls.Add(this.btn_sairConsultarTrabalhador);
             this.Controls.Add(this.dtgv_ConsultarTrabalhador);
-            this.Name = "frm_CadTrabalhadores";
+            this.Name = "frm_ConsultaTrabalhadores";
             this.Text = "frm_CadTrabalhadores";
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_ConsultarTrabalhador)).EndInit();
             this.ResumeLayout(false);
