@@ -49,6 +49,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEvento.Designer.cs">
+      <DependentUpon>frmEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPagamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPagamentos.Designer.cs">
+      <DependentUpon>frmPagamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServico.Designer.cs">
+      <DependentUpon>frmServico.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_CadCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +99,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmEvento.resx">
+      <DependentUpon>frmEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPagamentos.resx">
+      <DependentUpon>frmPagamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServico.resx">
+      <DependentUpon>frmServico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_CadCliente.resx">
       <DependentUpon>frm_CadCliente.cs</DependentUpon>
     </EmbeddedResource>
