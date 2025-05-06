@@ -29,7 +29,7 @@ namespace orgEventos1
         private void btn_AddTrab_Click(object sender, EventArgs e)
         {
             Trabalhador trabalhador = new Trabalhador();
-            //Trabalhador_DAO trabalhador_DAO = new Trabalhador_DAO(_conexao);
+            Trabalhador_DAO trabalhador_DAO = new Trabalhador_DAO(_conexao);
 
             if (string.IsNullOrWhiteSpace(txtbox_nomeTrab.Text))
             {
