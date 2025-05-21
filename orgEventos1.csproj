@@ -189,7 +189,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ConsultarLugares.resx">
       <DependentUpon>frm_ConsultarLugares.cs</DependentUpon>
-=======
     <EmbeddedResource Include="frm_ConsultarServicos.resx">
       <DependentUpon>frm_ConsultarServicos.cs</DependentUpon>
 >>>>>>> 8c26ce037e1fa186e0bfa541f059c265fe788e2e
