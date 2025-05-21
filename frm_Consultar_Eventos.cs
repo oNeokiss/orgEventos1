@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace orgEventos1
 {
-    public partial class frm_ConsultaLugares : Form
+    public partial class frm_Consultar_Eventos : Form
     {
-        public frm_ConsultaLugares()
+        public frm_Consultar_Eventos()
         {
             InitializeComponent();
+        }
+
+        private void btn_adicionar_Click(object sender, EventArgs e)
+        {
+            frmEvento frmEvento = new frmEvento();
+            frmEvento.ShowDialog();
         }
     }
 }
