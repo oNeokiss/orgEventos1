@@ -97,6 +97,12 @@
     <Compile Include="frm_CadCliente.Designer.cs">
       <DependentUpon>frm_CadCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_CadEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CadEvento.Designer.cs">
+      <DependentUpon>frm_CadEvento.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_CadLugar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,11 +115,11 @@
     <Compile Include="frm_CadTrabalhador.Designer.cs">
       <DependentUpon>frm_CadTrabalhador.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_ConsultarLugares.cs">
+    <Compile Include="frm_ConsultarServicos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_ConsultarLugares.Designer.cs">
-      <DependentUpon>frm_ConsultarLugares.cs</DependentUpon>
+    <Compile Include="frm_ConsultarServicos.Designer.cs">
+      <DependentUpon>frm_ConsultarServicos.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_Consultar_Eventos.cs">
       <SubType>Form</SubType>
@@ -132,6 +138,12 @@
     </Compile>
     <Compile Include="frm_ConsultaCliente.Designer.cs">
       <DependentUpon>frm_ConsultaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Telalogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Telalogin.Designer.cs">
+      <DependentUpon>frm_Telalogin.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_TelaPrincipal.cs">
       <SubType>Form</SubType>
@@ -165,14 +177,22 @@
     <EmbeddedResource Include="frm_CadCliente.resx">
       <DependentUpon>frm_CadCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_CadEvento.resx">
+      <DependentUpon>frm_CadEvento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_CadLugar.resx">
       <DependentUpon>frm_CadLugar.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="frm_CadTrabalhador.resx">
       <DependentUpon>frm_CadTrabalhador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ConsultarLugares.resx">
       <DependentUpon>frm_ConsultarLugares.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="frm_ConsultarServicos.resx">
+      <DependentUpon>frm_ConsultarServicos.cs</DependentUpon>
+>>>>>>> 8c26ce037e1fa186e0bfa541f059c265fe788e2e
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Consultar_Eventos.resx">
       <DependentUpon>frm_Consultar_Eventos.cs</DependentUpon>
@@ -182,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ConsultaCliente.resx">
       <DependentUpon>frm_ConsultaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Telalogin.resx">
+      <DependentUpon>frm_Telalogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_TelaPrincipal.resx">
       <DependentUpon>frm_TelaPrincipal.cs</DependentUpon>

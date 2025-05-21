@@ -137,6 +137,7 @@ namespace orgEventos1
 
         }
 
+<<<<<<< HEAD
         private void btn_excluir_Click(object sender, EventArgs e)
         {
             if (dtgv_ConsultarCliente.SelectedRows.Count > 0)
@@ -156,6 +157,15 @@ namespace orgEventos1
                     MessageBox.Show("Selecione um registro para exclusão", "Atenção");
                 }
             }
+=======
+        
+
+        
+
+        private void btn_Editar_Click(object sender, EventArgs e)
+        {
+
+>>>>>>> 8c26ce037e1fa186e0bfa541f059c265fe788e2e
         }
     }
 }

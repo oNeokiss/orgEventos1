@@ -40,6 +40,7 @@
             this.lugaresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pagamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eventosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +62,8 @@
             this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clToolStripMenuItem,
             this.trabalhadoresToolStripMenuItem,
-            this.lugaresToolStripMenuItem});
+            this.lugaresToolStripMenuItem,
+            this.eventosToolStripMenuItem});
             this.cadastrosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(105, 29);
@@ -136,6 +138,13 @@
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
+            // eventosToolStripMenuItem
+            // 
+            this.eventosToolStripMenuItem.Name = "eventosToolStripMenuItem";
+            this.eventosToolStripMenuItem.Size = new System.Drawing.Size(203, 30);
+            this.eventosToolStripMenuItem.Text = "Eventos";
+            this.eventosToolStripMenuItem.Click += new System.EventHandler(this.eventosToolStripMenuItem_Click);
+            // 
             // frm_TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,6 +178,7 @@
         private System.Windows.Forms.ToolStripMenuItem trabalhadoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trabalhadoresToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem pagamentoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eventosToolStripMenuItem;
     }
 }
 

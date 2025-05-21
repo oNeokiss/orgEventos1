@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace orgEventos1
 {
-    public partial class frm_ConsultarLugares : Form
+    public partial class frm_ConsultarServicos : Form
     {
-        public frm_ConsultarLugares()
+        public frm_ConsultarServicos()
         {
             InitializeComponent();
         }
