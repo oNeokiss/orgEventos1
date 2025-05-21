@@ -67,6 +67,30 @@
     <Compile Include="frmServico.Designer.cs">
       <DependentUpon>frmServico.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Alterar_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Alterar_Clientes.Designer.cs">
+      <DependentUpon>frm_Alterar_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Alterar_Lugar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Alterar_Lugar.Designer.cs">
+      <DependentUpon>frm_Alterar_Lugar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Alterar_Servico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Alterar_Servico.Designer.cs">
+      <DependentUpon>frm_Alterar_Servico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Alterar_Trabalhadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Alterar_Trabalhadores.Designer.cs">
+      <DependentUpon>frm_Alterar_Trabalhadores.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_CadCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,11 +121,11 @@
     <Compile Include="frm_ConsultarServicos.Designer.cs">
       <DependentUpon>frm_ConsultarServicos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_ConsultaLugares.cs">
+    <Compile Include="frm_Consultar_Eventos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_ConsultaLugares.Designer.cs">
-      <DependentUpon>frm_ConsultaLugares.cs</DependentUpon>
+    <Compile Include="frm_Consultar_Eventos.Designer.cs">
+      <DependentUpon>frm_Consultar_Eventos.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_ConsultaTrabalhadores.cs">
       <SubType>Form</SubType>
@@ -138,6 +162,18 @@
     <EmbeddedResource Include="frmServico.resx">
       <DependentUpon>frmServico.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_Alterar_Clientes.resx">
+      <DependentUpon>frm_Alterar_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Alterar_Lugar.resx">
+      <DependentUpon>frm_Alterar_Lugar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Alterar_Servico.resx">
+      <DependentUpon>frm_Alterar_Servico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Alterar_Trabalhadores.resx">
+      <DependentUpon>frm_Alterar_Trabalhadores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_CadCliente.resx">
       <DependentUpon>frm_CadCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,11 +183,14 @@
     <EmbeddedResource Include="frm_CadLugar.resx">
       <DependentUpon>frm_CadLugar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_CadTrabalhador.resx">
+      <DependentUpon>frm_CadTrabalhador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_ConsultarServicos.resx">
       <DependentUpon>frm_ConsultarServicos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_ConsultaLugares.resx">
-      <DependentUpon>frm_ConsultaLugares.cs</DependentUpon>
+    <EmbeddedResource Include="frm_Consultar_Eventos.resx">
+      <DependentUpon>frm_Consultar_Eventos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ConsultaTrabalhadores.resx">
       <DependentUpon>frm_ConsultaTrabalhadores.cs</DependentUpon>

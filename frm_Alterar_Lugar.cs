@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace orgEventos1
 {
-    public partial class frm_ConsultarServicos : Form
+    public partial class frm_Alterar_Lugar : Form
     {
-        public frm_ConsultarServicos()
+        public frm_Alterar_Lugar()
         {
             InitializeComponent();
-        }
-
-        private void btn_adicionar_Click(object sender, EventArgs e)
-        {
-            frm_CadLugar frm_CadLugar = new frm_CadLugar();
-            frm_CadLugar.ShowDialog();
         }
     }
 }

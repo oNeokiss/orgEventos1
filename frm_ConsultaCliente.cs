@@ -138,15 +138,40 @@ namespace orgEventos1
         }
 
 
+        private void btn_excluir_Click(object sender, EventArgs e)
+        {
+            if (dtgv_ConsultarCliente.SelectedRows.Count > 0)
+            {
+                int codigo = Convert.ToInt32(dtgv_ConsultarCliente.CurrentRow.Cells[0].Value); // Pega o ID
 
+                var resultado = MessageBox.Show("Deseja excluir esse registro", "Pergunta", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
+                if (resultado == DialogResult.Yes)
+                {
+                    Cliente_DAO clientesDAO = new Cliente_DAO(_conexao);
+                    //clientesDAO.ExcluirCliente(codigo); // Chama o método de exclusão
+                    ListarCliente(); // Atualiza a lista
+                }
+                else
+                {
+                    MessageBox.Show("Selecione um registro para exclusão", "Atenção");
+                }
+            }
+        }
+
+        
+
+        
 
         private void btn_Editar_Click(object sender, EventArgs e)
         {
 
+
         }
 
-        private void btn_excluir_Click(object sender, EventArgs e)
+        
+
+        private void btn_excluir_Click_1(object sender, EventArgs e)
         {
             // Verifica se há alguma linha selecionada no DataGrid
             if (dtgv_ConsultarCliente.SelectedRows.Count > 0)

@@ -1,6 +1,6 @@
 ﻿namespace orgEventos1
 {
-    partial class frm_CadTrabalhador
+    partial class frm_Alterar_Trabalhadores
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btn_SairCadTrab = new System.Windows.Forms.Button();
+            this.btn_AddTrab = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtBox_emailTrab = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -38,10 +40,28 @@
             this.txtbox_nomeTrab = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_SairCadTrab = new System.Windows.Forms.Button();
-            this.btn_AddTrab = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btn_SairCadTrab
+            // 
+            this.btn_SairCadTrab.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SairCadTrab.Location = new System.Drawing.Point(384, 304);
+            this.btn_SairCadTrab.Name = "btn_SairCadTrab";
+            this.btn_SairCadTrab.Size = new System.Drawing.Size(158, 44);
+            this.btn_SairCadTrab.TabIndex = 10;
+            this.btn_SairCadTrab.Text = "Voltar";
+            this.btn_SairCadTrab.UseVisualStyleBackColor = true;
+            // 
+            // btn_AddTrab
+            // 
+            this.btn_AddTrab.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AddTrab.Location = new System.Drawing.Point(644, 304);
+            this.btn_AddTrab.Name = "btn_AddTrab";
+            this.btn_AddTrab.Size = new System.Drawing.Size(158, 44);
+            this.btn_AddTrab.TabIndex = 9;
+            this.btn_AddTrab.Text = "Adicionar";
+            this.btn_AddTrab.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -54,10 +74,10 @@
             this.groupBox1.Controls.Add(this.txtbox_nomeTrab);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(28, 112);
+            this.groupBox1.Location = new System.Drawing.Point(54, 105);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1059, 148);
-            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados Pessoais";
             // 
@@ -133,35 +153,13 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(50, 26);
+            this.label1.Location = new System.Drawing.Point(76, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(437, 39);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Cadastro de Trabalhadores";
+            this.label1.Size = new System.Drawing.Size(443, 39);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Alteração de Trabalhadores";
             // 
-            // btn_SairCadTrab
-            // 
-            this.btn_SairCadTrab.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_SairCadTrab.Location = new System.Drawing.Point(358, 311);
-            this.btn_SairCadTrab.Name = "btn_SairCadTrab";
-            this.btn_SairCadTrab.Size = new System.Drawing.Size(158, 44);
-            this.btn_SairCadTrab.TabIndex = 6;
-            this.btn_SairCadTrab.Text = "Voltar";
-            this.btn_SairCadTrab.UseVisualStyleBackColor = true;
-            this.btn_SairCadTrab.Click += new System.EventHandler(this.btn_SairCadTrab_Click);
-            // 
-            // btn_AddTrab
-            // 
-            this.btn_AddTrab.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_AddTrab.Location = new System.Drawing.Point(618, 311);
-            this.btn_AddTrab.Name = "btn_AddTrab";
-            this.btn_AddTrab.Size = new System.Drawing.Size(158, 44);
-            this.btn_AddTrab.TabIndex = 5;
-            this.btn_AddTrab.Text = "Adicionar";
-            this.btn_AddTrab.UseVisualStyleBackColor = true;
-            this.btn_AddTrab.Click += new System.EventHandler(this.btn_AddTrab_Click);
-            // 
-            // frm_CadTrabalhador
+            // frm_Alterar_Trabalhadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -171,8 +169,8 @@
             this.Controls.Add(this.btn_AddTrab);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Name = "frm_CadTrabalhador";
-            this.Text = "frm_CadTrabalhador";
+            this.Name = "frm_Alterar_Trabalhadores";
+            this.Text = "frm_Alterar_Trabalhadores";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -181,6 +179,9 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btn_SairCadTrab;
+        private System.Windows.Forms.Button btn_AddTrab;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtBox_emailTrab;
         private System.Windows.Forms.Label label5;
@@ -191,7 +192,5 @@
         private System.Windows.Forms.TextBox txtbox_nomeTrab;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_SairCadTrab;
-        private System.Windows.Forms.Button btn_AddTrab;
     }
 }
