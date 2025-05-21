@@ -90,6 +90,7 @@
             this.btn_excluir.TabIndex = 4;
             this.btn_excluir.Text = "Excluir";
             this.btn_excluir.UseVisualStyleBackColor = true;
+            this.btn_excluir.Click += new System.EventHandler(this.btn_excluir_Click);
             // 
             // label1
             // 
@@ -108,7 +109,6 @@
             this.txtBox_PesquisarCliente.Name = "txtBox_PesquisarCliente";
             this.txtBox_PesquisarCliente.Size = new System.Drawing.Size(368, 26);
             this.txtBox_PesquisarCliente.TabIndex = 6;
-            
             // 
             // label2
             // 
@@ -119,7 +119,6 @@
             this.label2.Size = new System.Drawing.Size(153, 31);
             this.label2.TabIndex = 7;
             this.label2.Text = "Pesquisar:";
-           
             // 
             // btn_pesqusiarCliente
             // 

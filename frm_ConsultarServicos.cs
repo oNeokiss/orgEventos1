@@ -16,5 +16,16 @@ namespace orgEventos1
         {
             InitializeComponent();
         }
+
+        private void btn_AddServico_Click(object sender, EventArgs e)
+        {
+            frmEvento frmevento = new frmEvento();
+            frmevento.ShowDialog();
+        }
+
+        private void btn_DelServico_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -22,7 +22,7 @@ namespace orgEventos1
             configurarDataGrid();       // Configura visualmente o DataGridView
         }
 
-        
+
         private void configurarDataGrid()
         {
             dtgv_ConsultarCliente.DefaultCellStyle.Font = new Font("Arial", 9, FontStyle.Bold); // Define a fonte das células
@@ -86,7 +86,7 @@ namespace orgEventos1
             dtgv_ConsultarCliente.Columns["complemento"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dtgv_ConsultarCliente.Columns["complemento"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dtgv_ConsultarCliente.Columns["complemento"].DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
-            dtgv_ConsultarCliente.Columns["complemento"].HeaderText = "Complemento";           
+            dtgv_ConsultarCliente.Columns["complemento"].HeaderText = "Complemento";
 
 
         }
@@ -137,13 +137,51 @@ namespace orgEventos1
 
         }
 
-        
 
-        
+
+
 
         private void btn_Editar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_excluir_Click(object sender, EventArgs e)
+        {
+            // Verifica se há alguma linha selecionada no DataGrid
+            if (dtgv_ConsultarCliente.SelectedRows.Count > 0)
+            {
+                // Pega o código do médico da linha selecionada
+                int codigo = Convert.ToInt32(dtgv_ConsultarCliente.CurrentRow.Cells[0].Value);
+
+                // Exibe um MessageBox de confirmação
+                var resultado = MessageBox.Show(
+                    "Deseja excluir esse registro?",
+                    "Pergunta",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question,
+                    MessageBoxDefaultButton.Button2);
+
+                // Se o usuário confirmar a exclusão
+                if (resultado == DialogResult.Yes)
+                {
+                    // Cria o DAO e exclui o médico
+                    Cliente_DAO cliente_dao = new Cliente_DAO(_conexao);
+                    //cliente_dao.ExcluirCliente(codigo);
+
+                    // Atualiza a lista após exclusão
+                    //ListarMedico();
+                }
+                else
+                {
+                    // Caso não tenha selecionado nada ou cancele, exibe aviso
+                    MessageBox.Show(
+                        "Selecione um registro para exclusão!",
+                        "Atenção",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                }
+            }
         }
     }
 }
