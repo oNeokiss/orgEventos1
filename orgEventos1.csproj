@@ -115,6 +115,12 @@
     <Compile Include="frm_ConsultaCliente.Designer.cs">
       <DependentUpon>frm_ConsultaCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Telalogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Telalogin.Designer.cs">
+      <DependentUpon>frm_Telalogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_TelaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ConsultaCliente.resx">
       <DependentUpon>frm_ConsultaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Telalogin.resx">
+      <DependentUpon>frm_Telalogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_TelaPrincipal.resx">
       <DependentUpon>frm_TelaPrincipal.cs</DependentUpon>
