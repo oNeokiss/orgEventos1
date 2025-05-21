@@ -183,15 +183,11 @@
     <EmbeddedResource Include="frm_CadLugar.resx">
       <DependentUpon>frm_CadLugar.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="frm_CadTrabalhador.resx">
       <DependentUpon>frm_CadTrabalhador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_ConsultarLugares.resx">
-      <DependentUpon>frm_ConsultarLugares.cs</DependentUpon>
     <EmbeddedResource Include="frm_ConsultarServicos.resx">
       <DependentUpon>frm_ConsultarServicos.cs</DependentUpon>
->>>>>>> 8c26ce037e1fa186e0bfa541f059c265fe788e2e
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Consultar_Eventos.resx">
       <DependentUpon>frm_Consultar_Eventos.cs</DependentUpon>
