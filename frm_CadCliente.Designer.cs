@@ -51,6 +51,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.btn_AddCli = new System.Windows.Forms.Button();
             this.btn_SairCadCli = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -282,12 +283,21 @@
             this.btn_SairCadCli.UseVisualStyleBackColor = true;
             this.btn_SairCadCli.Click += new System.EventHandler(this.btn_SairCadCli_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(401, 261);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 5;
+            // 
             // frm_CadCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1167, 595);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btn_SairCadCli);
             this.Controls.Add(this.btn_AddCli);
             this.Controls.Add(this.groupBox2);
@@ -330,5 +340,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btn_AddCli;
         private System.Windows.Forms.Button btn_SairCadCli;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

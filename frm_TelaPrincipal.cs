@@ -47,11 +47,7 @@ namespace orgEventos1
             frm_cadtrabalhadores.ShowDialog();
         }
 
-        private void lugaresToolStripMenuItem1_Click(object sender, EventArgs e) //Consultar Lugares
-        {
-            frm_ConsultaLugares frm_consultalugares = new frm_ConsultaLugares();
-            frm_consultalugares.ShowDialog();
-        }
+       
 
         private void trabalhadoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -61,13 +57,20 @@ namespace orgEventos1
 
         private void lugaresToolStripMenuItem1_Click_1(object sender, EventArgs e)
         {
-
+            frm_ConsultaLugares frm_consultalugares = new frm_ConsultaLugares();
+            frm_consultalugares.ShowDialog();
         }
 
         private void pagamentoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmPagamentos frmpagamentos = new frmPagamentos();
             frmpagamentos.ShowDialog();
+        }
+
+        private void eventosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_CadEvento frm_cadevento = new frm_CadEvento();
+            frm_cadevento.ShowDialog();
         }
     }
 }

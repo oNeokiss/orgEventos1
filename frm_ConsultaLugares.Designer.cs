@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_pesqusiarLugar = new System.Windows.Forms.Button();
+            this.btn_BuscarLugar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtBox_PesquisarLugar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_excluirLugar = new System.Windows.Forms.Button();
-            this.btn_adicionarLugar = new System.Windows.Forms.Button();
+            this.btn_DelLugar = new System.Windows.Forms.Button();
+            this.btn_AddLugar = new System.Windows.Forms.Button();
             this.btn_EditarLugar = new System.Windows.Forms.Button();
             this.btn_sairConsultaLugar = new System.Windows.Forms.Button();
-            this.dtgv_ConsultarCliente = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_ConsultarCliente)).BeginInit();
+            this.dtgv_ConsultarLugares = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_ConsultarLugares)).BeginInit();
             this.SuspendLayout();
             // 
-            // btn_pesqusiarLugar
+            // btn_BuscarLugar
             // 
-            this.btn_pesqusiarLugar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_pesqusiarLugar.Location = new System.Drawing.Point(1053, 68);
-            this.btn_pesqusiarLugar.Name = "btn_pesqusiarLugar";
-            this.btn_pesqusiarLugar.Size = new System.Drawing.Size(103, 31);
-            this.btn_pesqusiarLugar.TabIndex = 17;
-            this.btn_pesqusiarLugar.Text = "Pesquisar";
-            this.btn_pesqusiarLugar.UseVisualStyleBackColor = true;
+            this.btn_BuscarLugar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_BuscarLugar.Location = new System.Drawing.Point(1053, 68);
+            this.btn_BuscarLugar.Name = "btn_BuscarLugar";
+            this.btn_BuscarLugar.Size = new System.Drawing.Size(103, 31);
+            this.btn_BuscarLugar.TabIndex = 17;
+            this.btn_BuscarLugar.Text = "Pesquisar";
+            this.btn_BuscarLugar.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -74,29 +74,29 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(10, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(299, 42);
+            this.label1.Size = new System.Drawing.Size(341, 42);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Consultar Lugar";
+            this.label1.Text = "Consultar Lugares";
             // 
-            // btn_excluirLugar
+            // btn_DelLugar
             // 
-            this.btn_excluirLugar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_excluirLugar.Location = new System.Drawing.Point(262, 491);
-            this.btn_excluirLugar.Name = "btn_excluirLugar";
-            this.btn_excluirLugar.Size = new System.Drawing.Size(116, 40);
-            this.btn_excluirLugar.TabIndex = 13;
-            this.btn_excluirLugar.Text = "Excluir";
-            this.btn_excluirLugar.UseVisualStyleBackColor = true;
+            this.btn_DelLugar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DelLugar.Location = new System.Drawing.Point(262, 491);
+            this.btn_DelLugar.Name = "btn_DelLugar";
+            this.btn_DelLugar.Size = new System.Drawing.Size(116, 40);
+            this.btn_DelLugar.TabIndex = 13;
+            this.btn_DelLugar.Text = "Excluir";
+            this.btn_DelLugar.UseVisualStyleBackColor = true;
             // 
-            // btn_adicionarLugar
+            // btn_AddLugar
             // 
-            this.btn_adicionarLugar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_adicionarLugar.Location = new System.Drawing.Point(140, 491);
-            this.btn_adicionarLugar.Name = "btn_adicionarLugar";
-            this.btn_adicionarLugar.Size = new System.Drawing.Size(116, 40);
-            this.btn_adicionarLugar.TabIndex = 12;
-            this.btn_adicionarLugar.Text = "Adicionar";
-            this.btn_adicionarLugar.UseVisualStyleBackColor = true;
+            this.btn_AddLugar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AddLugar.Location = new System.Drawing.Point(140, 491);
+            this.btn_AddLugar.Name = "btn_AddLugar";
+            this.btn_AddLugar.Size = new System.Drawing.Size(116, 40);
+            this.btn_AddLugar.TabIndex = 12;
+            this.btn_AddLugar.Text = "Adicionar";
+            this.btn_AddLugar.UseVisualStyleBackColor = true;
             // 
             // btn_EditarLugar
             // 
@@ -118,31 +118,31 @@
             this.btn_sairConsultaLugar.Text = "Sair";
             this.btn_sairConsultaLugar.UseVisualStyleBackColor = true;
             // 
-            // dtgv_ConsultarCliente
+            // dtgv_ConsultarLugares
             // 
-            this.dtgv_ConsultarCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv_ConsultarCliente.Location = new System.Drawing.Point(17, 104);
-            this.dtgv_ConsultarCliente.Name = "dtgv_ConsultarCliente";
-            this.dtgv_ConsultarCliente.Size = new System.Drawing.Size(1138, 381);
-            this.dtgv_ConsultarCliente.TabIndex = 9;
+            this.dtgv_ConsultarLugares.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_ConsultarLugares.Location = new System.Drawing.Point(17, 104);
+            this.dtgv_ConsultarLugares.Name = "dtgv_ConsultarLugares";
+            this.dtgv_ConsultarLugares.Size = new System.Drawing.Size(1138, 381);
+            this.dtgv_ConsultarLugares.TabIndex = 9;
             // 
             // frm_ConsultaLugares
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1167, 576);
-            this.Controls.Add(this.btn_pesqusiarLugar);
+            this.Controls.Add(this.btn_BuscarLugar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtBox_PesquisarLugar);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_excluirLugar);
-            this.Controls.Add(this.btn_adicionarLugar);
+            this.Controls.Add(this.btn_DelLugar);
+            this.Controls.Add(this.btn_AddLugar);
             this.Controls.Add(this.btn_EditarLugar);
             this.Controls.Add(this.btn_sairConsultaLugar);
-            this.Controls.Add(this.dtgv_ConsultarCliente);
+            this.Controls.Add(this.dtgv_ConsultarLugares);
             this.Name = "frm_ConsultaLugares";
             this.Text = "frm_ConsultaLugares";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_ConsultarCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_ConsultarLugares)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,14 +150,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btn_pesqusiarLugar;
+        private System.Windows.Forms.Button btn_BuscarLugar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtBox_PesquisarLugar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_excluirLugar;
-        private System.Windows.Forms.Button btn_adicionarLugar;
+        private System.Windows.Forms.Button btn_DelLugar;
+        private System.Windows.Forms.Button btn_AddLugar;
         private System.Windows.Forms.Button btn_EditarLugar;
         private System.Windows.Forms.Button btn_sairConsultaLugar;
-        private System.Windows.Forms.DataGridView dtgv_ConsultarCliente;
+        private System.Windows.Forms.DataGridView dtgv_ConsultarLugares;
     }
 }

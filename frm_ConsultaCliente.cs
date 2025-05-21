@@ -136,5 +136,14 @@ namespace orgEventos1
             ListarCliente(); // Executa a busca
 
         }
+
+        
+
+        
+
+        private void btn_Editar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -68,6 +68,7 @@
             this.btn_Editar.TabIndex = 2;
             this.btn_Editar.Text = "Editar";
             this.btn_Editar.UseVisualStyleBackColor = true;
+            this.btn_Editar.Click += new System.EventHandler(this.btn_Editar_Click);
             // 
             // btn_adicionar
             // 
@@ -107,6 +108,7 @@
             this.txtBox_PesquisarCliente.Name = "txtBox_PesquisarCliente";
             this.txtBox_PesquisarCliente.Size = new System.Drawing.Size(368, 26);
             this.txtBox_PesquisarCliente.TabIndex = 6;
+            
             // 
             // label2
             // 
@@ -117,6 +119,7 @@
             this.label2.Size = new System.Drawing.Size(153, 31);
             this.label2.TabIndex = 7;
             this.label2.Text = "Pesquisar:";
+           
             // 
             // btn_pesqusiarCliente
             // 

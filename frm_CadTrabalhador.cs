@@ -37,10 +37,10 @@ namespace orgEventos1
             }
             else
             {
-                trabalhador.Nome = txtbox_nomeTrab.Text;
-                trabalhador.Cpf = msktx_cpfTrab.Text;
-                trabalhador.Telefone = msktx_telefoneTrab.Text;
-                trabalhador.Email = txtBox_emailTrab.Text;
+                trabalhador.nome = txtbox_nomeTrab.Text;
+                trabalhador.cpf = msktx_cpfTrab.Text;
+                trabalhador.telefone = msktx_telefoneTrab.Text;
+                trabalhador.email = txtBox_emailTrab.Text;
                 
 
                 
