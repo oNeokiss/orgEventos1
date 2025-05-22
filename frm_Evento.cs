@@ -10,19 +10,21 @@ using System.Windows.Forms;
 
 namespace orgEventos1
 {
-    public partial class frm_ConsultarServicos : Form
+    public partial class frm_Evento: Form
     {
-        public frm_ConsultarServicos()
+        public frm_Evento()
         {
             InitializeComponent();
         }
 
-        
-
-        private void btn_AddServico_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
-            frmServico frmservico = new frmServico();
-            frmservico.ShowDialog();
+
+        }
+
+        private void btn_Sair_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -72,5 +72,23 @@ namespace orgEventos1
             frm_CadEvento frm_cadevento = new frm_CadEvento();
             frm_cadevento.ShowDialog();
         }
+
+        private void servicosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmServico frmservico = new frmServico();
+            frmservico.ShowDialog();
+        }
+
+        private void servicosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_ConsultarServicos frm_consultarservicos = new frm_ConsultarServicos();
+            frm_consultarservicos.ShowDialog();
+        }
+
+        private void eventosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frm_ConsultarEventos frm_consultareventos = new frm_ConsultarEventos();
+            frm_consultareventos.ShowDialog();
+        }
     }
 }

@@ -49,11 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmEvento.cs">
+    <Compile Include="frm_Evento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEvento.Designer.cs">
-      <DependentUpon>frmEvento.cs</DependentUpon>
+    <Compile Include="frm_Evento.Designer.cs">
+      <DependentUpon>frm_Evento.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPagamentos.cs">
       <SubType>Form</SubType>
@@ -115,17 +115,23 @@
     <Compile Include="frm_CadTrabalhador.Designer.cs">
       <DependentUpon>frm_CadTrabalhador.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_ConsultaLugares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ConsultaLugares.Designer.cs">
+      <DependentUpon>frm_ConsultaLugares.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_ConsultarServicos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_ConsultarServicos.Designer.cs">
       <DependentUpon>frm_ConsultarServicos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Consultar_Eventos.cs">
+    <Compile Include="frm_ConsultarEventos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Consultar_Eventos.Designer.cs">
-      <DependentUpon>frm_Consultar_Eventos.cs</DependentUpon>
+    <Compile Include="frm_ConsultarEventos.Designer.cs">
+      <DependentUpon>frm_ConsultarEventos.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_ConsultaTrabalhadores.cs">
       <SubType>Form</SubType>
@@ -153,8 +159,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmEvento.resx">
-      <DependentUpon>frmEvento.cs</DependentUpon>
+    <EmbeddedResource Include="frm_Evento.resx">
+      <DependentUpon>frm_Evento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPagamentos.resx">
       <DependentUpon>frmPagamentos.cs</DependentUpon>
@@ -186,11 +192,14 @@
     <EmbeddedResource Include="frm_CadTrabalhador.resx">
       <DependentUpon>frm_CadTrabalhador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_ConsultaLugares.resx">
+      <DependentUpon>frm_ConsultaLugares.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_ConsultarServicos.resx">
       <DependentUpon>frm_ConsultarServicos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Consultar_Eventos.resx">
-      <DependentUpon>frm_Consultar_Eventos.cs</DependentUpon>
+    <EmbeddedResource Include="frm_ConsultarEventos.resx">
+      <DependentUpon>frm_ConsultarEventos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ConsultaTrabalhadores.resx">
       <DependentUpon>frm_ConsultaTrabalhadores.cs</DependentUpon>

@@ -59,7 +59,6 @@
             this.btn_DelServico.TabIndex = 12;
             this.btn_DelServico.Text = "Excluir";
             this.btn_DelServico.UseVisualStyleBackColor = true;
-            
             // 
             // btn_AddServico
             // 
@@ -70,7 +69,7 @@
             this.btn_AddServico.TabIndex = 11;
             this.btn_AddServico.Text = "Adicionar";
             this.btn_AddServico.UseVisualStyleBackColor = true;
-            
+            this.btn_AddServico.Click += new System.EventHandler(this.btn_AddServico_Click);
             // 
             // btn_EditarServico
             // 

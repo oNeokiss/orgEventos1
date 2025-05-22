@@ -1,6 +1,6 @@
 ﻿namespace orgEventos1
 {
-    partial class frm_Consultar_Eventos
+    partial class frm_ConsultarEventos
     {
         /// <summary>
         /// Required designer variable.

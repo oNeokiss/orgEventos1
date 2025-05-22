@@ -10,21 +10,17 @@ using System.Windows.Forms;
 
 namespace orgEventos1
 {
-    public partial class frmEvento: Form
+    public partial class frm_ConsultarEventos : Form
     {
-        public frmEvento()
+        public frm_ConsultarEventos()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btn_adicionar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btn_Sair_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            frm_Evento frmevento = new frm_Evento();
+            frmevento.ShowDialog();
         }
     }
 }

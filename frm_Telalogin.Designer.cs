@@ -30,12 +30,12 @@
         {
             this.btn_sairLogin = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_Entrar = new System.Windows.Forms.Button();
             this.cBox_MostrarSenha = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtBox_Senha = new System.Windows.Forms.TextBox();
             this.txtBox_NomeUsuario = new System.Windows.Forms.TextBox();
-            this.btn_Entrar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,6 +66,18 @@
             this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Login";
+            // 
+            // btn_Entrar
+            // 
+            this.btn_Entrar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_Entrar.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Entrar.Location = new System.Drawing.Point(228, 174);
+            this.btn_Entrar.Name = "btn_Entrar";
+            this.btn_Entrar.Size = new System.Drawing.Size(76, 27);
+            this.btn_Entrar.TabIndex = 37;
+            this.btn_Entrar.Text = "Entrar";
+            this.btn_Entrar.UseVisualStyleBackColor = false;
+            this.btn_Entrar.Click += new System.EventHandler(this.btn_Entrar_Click);
             // 
             // cBox_MostrarSenha
             // 
@@ -109,22 +121,11 @@
             // 
             // txtBox_NomeUsuario
             // 
+            this.txtBox_NomeUsuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtBox_NomeUsuario.Location = new System.Drawing.Point(17, 51);
             this.txtBox_NomeUsuario.Name = "txtBox_NomeUsuario";
             this.txtBox_NomeUsuario.Size = new System.Drawing.Size(264, 20);
             this.txtBox_NomeUsuario.TabIndex = 0;
-            // 
-            // btn_Entrar
-            // 
-            this.btn_Entrar.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Entrar.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Entrar.Location = new System.Drawing.Point(228, 174);
-            this.btn_Entrar.Name = "btn_Entrar";
-            this.btn_Entrar.Size = new System.Drawing.Size(76, 27);
-            this.btn_Entrar.TabIndex = 37;
-            this.btn_Entrar.Text = "Entrar";
-            this.btn_Entrar.UseVisualStyleBackColor = false;
-            this.btn_Entrar.Click += new System.EventHandler(this.btn_Entrar_Click);
             // 
             // frm_Telalogin
             // 

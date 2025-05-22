@@ -34,13 +34,16 @@
             this.clToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trabalhadoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lugaresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eventosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trabalhadoresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.lugaresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pagamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eventosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.servicosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.servicosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.eventosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,6 +66,7 @@
             this.clToolStripMenuItem,
             this.trabalhadoresToolStripMenuItem,
             this.lugaresToolStripMenuItem,
+            this.servicosToolStripMenuItem1,
             this.eventosToolStripMenuItem});
             this.cadastrosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
@@ -90,12 +94,21 @@
             this.lugaresToolStripMenuItem.Text = "Lugares";
             this.lugaresToolStripMenuItem.Click += new System.EventHandler(this.lugaresToolStripMenuItem_Click);
             // 
+            // eventosToolStripMenuItem
+            // 
+            this.eventosToolStripMenuItem.Name = "eventosToolStripMenuItem";
+            this.eventosToolStripMenuItem.Size = new System.Drawing.Size(203, 30);
+            this.eventosToolStripMenuItem.Text = "Eventos";
+            this.eventosToolStripMenuItem.Click += new System.EventHandler(this.eventosToolStripMenuItem_Click);
+            // 
             // consultaToolStripMenuItem
             // 
             this.consultaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientesToolStripMenuItem,
             this.trabalhadoresToolStripMenuItem1,
-            this.lugaresToolStripMenuItem1});
+            this.lugaresToolStripMenuItem1,
+            this.servicosToolStripMenuItem,
+            this.eventosToolStripMenuItem1});
             this.consultaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
             this.consultaToolStripMenuItem.Size = new System.Drawing.Size(105, 29);
@@ -138,12 +151,26 @@
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
-            // eventosToolStripMenuItem
+            // servicosToolStripMenuItem
             // 
-            this.eventosToolStripMenuItem.Name = "eventosToolStripMenuItem";
-            this.eventosToolStripMenuItem.Size = new System.Drawing.Size(203, 30);
-            this.eventosToolStripMenuItem.Text = "Eventos";
-            this.eventosToolStripMenuItem.Click += new System.EventHandler(this.eventosToolStripMenuItem_Click);
+            this.servicosToolStripMenuItem.Name = "servicosToolStripMenuItem";
+            this.servicosToolStripMenuItem.Size = new System.Drawing.Size(203, 30);
+            this.servicosToolStripMenuItem.Text = "Servicos";
+            this.servicosToolStripMenuItem.Click += new System.EventHandler(this.servicosToolStripMenuItem_Click);
+            // 
+            // servicosToolStripMenuItem1
+            // 
+            this.servicosToolStripMenuItem1.Name = "servicosToolStripMenuItem1";
+            this.servicosToolStripMenuItem1.Size = new System.Drawing.Size(203, 30);
+            this.servicosToolStripMenuItem1.Text = "Servicos";
+            this.servicosToolStripMenuItem1.Click += new System.EventHandler(this.servicosToolStripMenuItem1_Click);
+            // 
+            // eventosToolStripMenuItem1
+            // 
+            this.eventosToolStripMenuItem1.Name = "eventosToolStripMenuItem1";
+            this.eventosToolStripMenuItem1.Size = new System.Drawing.Size(203, 30);
+            this.eventosToolStripMenuItem1.Text = "Eventos";
+            this.eventosToolStripMenuItem1.Click += new System.EventHandler(this.eventosToolStripMenuItem1_Click);
             // 
             // frm_TelaPrincipal
             // 
@@ -179,6 +206,9 @@
         private System.Windows.Forms.ToolStripMenuItem trabalhadoresToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem pagamentoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eventosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem servicosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem servicosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eventosToolStripMenuItem1;
     }
 }
 

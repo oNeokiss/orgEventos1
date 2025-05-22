@@ -77,6 +77,7 @@
             this.btn_excluirTrabalhador.TabIndex = 12;
             this.btn_excluirTrabalhador.Text = "Excluir";
             this.btn_excluirTrabalhador.UseVisualStyleBackColor = true;
+            this.btn_excluirTrabalhador.Click += new System.EventHandler(this.btn_excluirTrabalhador_Click);
             // 
             // btn_adicionarTrabalhador
             // 
