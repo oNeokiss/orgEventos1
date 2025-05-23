@@ -52,6 +52,7 @@
             this.btn_SairCadTrab.TabIndex = 10;
             this.btn_SairCadTrab.Text = "Voltar";
             this.btn_SairCadTrab.UseVisualStyleBackColor = true;
+            this.btn_SairCadTrab.Click += new System.EventHandler(this.btn_SairCadTrab_Click);
             // 
             // btn_AddTrab
             // 

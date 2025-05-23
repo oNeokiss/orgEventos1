@@ -31,8 +31,6 @@
             this.btn_SairCadCli = new System.Windows.Forms.Button();
             this.btn_AddCli = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.msktxt_cepCli = new System.Windows.Forms.MaskedTextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.txt_complemento = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_numLogradouro = new System.Windows.Forms.TextBox();
@@ -42,13 +40,13 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.datPick_nascCli = new System.Windows.Forms.DateTimePicker();
-            this.txt_emailCli = new System.Windows.Forms.TextBox();
+            this.txt_emailCliente = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.msktx_telefoneCli = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.msktx_cpfCli = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt_nomeCli = new System.Windows.Forms.TextBox();
+            this.txt_nomeCliente = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
@@ -64,6 +62,7 @@
             this.btn_SairCadCli.TabIndex = 9;
             this.btn_SairCadCli.Text = "Voltar";
             this.btn_SairCadCli.UseVisualStyleBackColor = true;
+            this.btn_SairCadCli.Click += new System.EventHandler(this.btn_SairCadCli_Click);
             // 
             // btn_AddCli
             // 
@@ -74,11 +73,10 @@
             this.btn_AddCli.TabIndex = 8;
             this.btn_AddCli.Text = "Adicionar";
             this.btn_AddCli.UseVisualStyleBackColor = true;
+            this.btn_AddCli.Click += new System.EventHandler(this.btn_AddCli_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.msktxt_cepCli);
-            this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.txt_complemento);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.txt_numLogradouro);
@@ -93,30 +91,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Endereço";
             // 
-            // msktxt_cepCli
-            // 
-            this.msktxt_cepCli.Location = new System.Drawing.Point(477, 72);
-            this.msktxt_cepCli.Mask = "00000-000";
-            this.msktxt_cepCli.Name = "msktxt_cepCli";
-            this.msktxt_cepCli.Size = new System.Drawing.Size(86, 22);
-            this.msktxt_cepCli.TabIndex = 10;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(434, 75);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(37, 16);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "CEP:";
-            // 
             // txt_complemento
             // 
             this.txt_complemento.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.txt_complemento.Location = new System.Drawing.Point(319, 72);
             this.txt_complemento.MaxLength = 20;
             this.txt_complemento.Name = "txt_complemento";
-            this.txt_complemento.Size = new System.Drawing.Size(82, 22);
+            this.txt_complemento.Size = new System.Drawing.Size(281, 22);
             this.txt_complemento.TabIndex = 9;
             // 
             // label7
@@ -167,13 +148,13 @@
             // 
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.datPick_nascCli);
-            this.groupBox1.Controls.Add(this.txt_emailCli);
+            this.groupBox1.Controls.Add(this.txt_emailCliente);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.msktx_telefoneCli);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.msktx_cpfCli);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txt_nomeCli);
+            this.groupBox1.Controls.Add(this.txt_nomeCliente);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(54, 96);
@@ -201,13 +182,13 @@
             this.datPick_nascCli.Size = new System.Drawing.Size(102, 22);
             this.datPick_nascCli.TabIndex = 8;
             // 
-            // txt_emailCli
+            // txt_emailCliente
             // 
-            this.txt_emailCli.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            this.txt_emailCli.Location = new System.Drawing.Point(81, 72);
-            this.txt_emailCli.Name = "txt_emailCli";
-            this.txt_emailCli.Size = new System.Drawing.Size(519, 22);
-            this.txt_emailCli.TabIndex = 7;
+            this.txt_emailCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.txt_emailCliente.Location = new System.Drawing.Point(81, 72);
+            this.txt_emailCliente.Name = "txt_emailCliente";
+            this.txt_emailCliente.Size = new System.Drawing.Size(519, 22);
+            this.txt_emailCliente.TabIndex = 7;
             // 
             // label5
             // 
@@ -252,13 +233,13 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "CPF:";
             // 
-            // txt_nomeCli
+            // txt_nomeCliente
             // 
-            this.txt_nomeCli.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txt_nomeCli.Location = new System.Drawing.Point(81, 35);
-            this.txt_nomeCli.Name = "txt_nomeCli";
-            this.txt_nomeCli.Size = new System.Drawing.Size(519, 22);
-            this.txt_nomeCli.TabIndex = 1;
+            this.txt_nomeCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_nomeCliente.Location = new System.Drawing.Point(81, 35);
+            this.txt_nomeCliente.Name = "txt_nomeCliente";
+            this.txt_nomeCliente.Size = new System.Drawing.Size(519, 22);
+            this.txt_nomeCliente.TabIndex = 1;
             // 
             // label2
             // 
@@ -306,8 +287,6 @@
         private System.Windows.Forms.Button btn_SairCadCli;
         private System.Windows.Forms.Button btn_AddCli;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.MaskedTextBox msktxt_cepCli;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txt_complemento;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_numLogradouro;
@@ -317,13 +296,13 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker datPick_nascCli;
-        private System.Windows.Forms.TextBox txt_emailCli;
+        private System.Windows.Forms.TextBox txt_emailCliente;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.MaskedTextBox msktx_telefoneCli;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MaskedTextBox msktx_cpfCli;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_nomeCli;
+        private System.Windows.Forms.TextBox txt_nomeCliente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
     }

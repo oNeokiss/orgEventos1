@@ -41,8 +41,6 @@
             this.txt_nomeCli = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.msktxt_cepCli = new System.Windows.Forms.MaskedTextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.txt_complemento = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_numLogradouro = new System.Windows.Forms.TextBox();
@@ -175,8 +173,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.msktxt_cepCli);
-            this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.txt_complemento);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.txt_numLogradouro);
@@ -190,23 +186,6 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Endereço";
-            // 
-            // msktxt_cepCli
-            // 
-            this.msktxt_cepCli.Location = new System.Drawing.Point(477, 72);
-            this.msktxt_cepCli.Mask = "00000-000";
-            this.msktxt_cepCli.Name = "msktxt_cepCli";
-            this.msktxt_cepCli.Size = new System.Drawing.Size(86, 22);
-            this.msktxt_cepCli.TabIndex = 10;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(434, 75);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(37, 16);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "CEP:";
             // 
             // txt_complemento
             // 
@@ -336,8 +315,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txt_complemento;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.MaskedTextBox msktxt_cepCli;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btn_AddCli;
         private System.Windows.Forms.Button btn_SairCadCli;
         private System.Windows.Forms.ComboBox comboBox1;

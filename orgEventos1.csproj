@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCad_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCad_Usuarios.Designer.cs">
+      <DependentUpon>frmCad_Usuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Evento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCad_Usuarios.resx">
+      <DependentUpon>frmCad_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Evento.resx">
       <DependentUpon>frm_Evento.cs</DependentUpon>
     </EmbeddedResource>

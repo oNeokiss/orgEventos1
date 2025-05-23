@@ -16,7 +16,7 @@ namespace orgEventos1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_Telalogin());
+            Application.Run(new frm_TelaPrincipal());
         }
     }
 }

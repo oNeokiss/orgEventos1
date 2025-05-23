@@ -120,6 +120,7 @@ namespace orgEventos1
         {
             frm_CadCliente frmCadCliente = new frm_CadCliente();
             frmCadCliente.ShowDialog();
+            ListarCliente();
         }
 
         private void btn_pesqusiarCliente_Click(object sender, EventArgs e)
