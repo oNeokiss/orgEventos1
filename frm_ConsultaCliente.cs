@@ -147,7 +147,26 @@ namespace orgEventos1
 
         private void btn_Editar_Click(object sender, EventArgs e)
         {
+            frm_Alterar_Clientes frm_alterar_clientes = new frm_Alterar_Clientes(int codigo);
+            frm_alterar_clientes.ShowDialog();
 
+            if (dtg_BuscarPac.SelectedRows.Count > 0)
+            {
+                int codigo = Convert.ToInt32(dtg_BuscarPac.CurrentRow.Cells[0].Value);
+
+                frmAlterarPaciente frmalterarpaciente = new frmAlterarPaciente(codigo);
+                frmalterarpaciente.ShowDialog();
+
+                ListarPaciente();
+
+            }
+            else
+            {
+                MessageBox.Show("Selecione um registro para alteração!",
+                    "Atenção",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+            }
 
         }
 
