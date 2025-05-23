@@ -29,9 +29,11 @@
         private void InitializeComponent()
         {
             this.btn_sair = new System.Windows.Forms.Button();
-            this.btn_Cadastrar = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.msktb_precoLugar = new System.Windows.Forms.GroupBox();
+            this.mskb_capacidade = new System.Windows.Forms.MaskedTextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txt_preco = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_TipoLugar = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -43,12 +45,10 @@
             this.mskb_Cep_Lugar = new System.Windows.Forms.MaskedTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.txt_numLogradouro = new System.Windows.Forms.TextBox();
             this.txt_Logradouro = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txt_numLogradouro = new System.Windows.Forms.TextBox();
-            this.txt_preco = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.mskb_capacidade = new System.Windows.Forms.MaskedTextBox();
+            this.btn_CadastrarLugar = new System.Windows.Forms.Button();
             this.msktb_precoLugar.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -63,17 +63,6 @@
             this.btn_sair.Text = "Sair";
             this.btn_sair.UseVisualStyleBackColor = true;
             this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click);
-            // 
-            // btn_Cadastrar
-            // 
-            this.btn_Cadastrar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Cadastrar.Location = new System.Drawing.Point(1054, 480);
-            this.btn_Cadastrar.Name = "btn_Cadastrar";
-            this.btn_Cadastrar.Size = new System.Drawing.Size(101, 48);
-            this.btn_Cadastrar.TabIndex = 4;
-            this.btn_Cadastrar.Text = "Cadastrar";
-            this.btn_Cadastrar.UseVisualStyleBackColor = true;
-            this.btn_Cadastrar.Click += new System.EventHandler(this.btn_Cadastrar_Click);
             // 
             // label9
             // 
@@ -103,6 +92,33 @@
             this.msktb_precoLugar.TabIndex = 6;
             this.msktb_precoLugar.TabStop = false;
             this.msktb_precoLugar.Text = "Dados";
+            // 
+            // mskb_capacidade
+            // 
+            this.mskb_capacidade.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mskb_capacidade.Location = new System.Drawing.Point(712, 36);
+            this.mskb_capacidade.Mask = "999";
+            this.mskb_capacidade.Name = "mskb_capacidade";
+            this.mskb_capacidade.Size = new System.Drawing.Size(46, 29);
+            this.mskb_capacidade.TabIndex = 16;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(115, 156);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(52, 33);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "R$";
+            // 
+            // txt_preco
+            // 
+            this.txt_preco.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_preco.Location = new System.Drawing.Point(170, 158);
+            this.txt_preco.Name = "txt_preco";
+            this.txt_preco.Size = new System.Drawing.Size(118, 31);
+            this.txt_preco.TabIndex = 14;
             // 
             // label8
             // 
@@ -215,6 +231,14 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "CEP :";
             // 
+            // txt_numLogradouro
+            // 
+            this.txt_numLogradouro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_numLogradouro.Location = new System.Drawing.Point(184, 132);
+            this.txt_numLogradouro.Name = "txt_numLogradouro";
+            this.txt_numLogradouro.Size = new System.Drawing.Size(104, 26);
+            this.txt_numLogradouro.TabIndex = 7;
+            // 
             // txt_Logradouro
             // 
             this.txt_Logradouro.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
@@ -234,40 +258,16 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Logradouro :";
             // 
-            // txt_numLogradouro
+            // btn_CadastrarLugar
             // 
-            this.txt_numLogradouro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_numLogradouro.Location = new System.Drawing.Point(184, 132);
-            this.txt_numLogradouro.Name = "txt_numLogradouro";
-            this.txt_numLogradouro.Size = new System.Drawing.Size(104, 26);
-            this.txt_numLogradouro.TabIndex = 7;
-            // 
-            // txt_preco
-            // 
-            this.txt_preco.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_preco.Location = new System.Drawing.Point(170, 158);
-            this.txt_preco.Name = "txt_preco";
-            this.txt_preco.Size = new System.Drawing.Size(118, 31);
-            this.txt_preco.TabIndex = 14;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(115, 156);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(52, 33);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "R$";
-            // 
-            // mskb_capacidade
-            // 
-            this.mskb_capacidade.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskb_capacidade.Location = new System.Drawing.Point(712, 36);
-            this.mskb_capacidade.Mask = "999";
-            this.mskb_capacidade.Name = "mskb_capacidade";
-            this.mskb_capacidade.Size = new System.Drawing.Size(46, 29);
-            this.mskb_capacidade.TabIndex = 16;
+            this.btn_CadastrarLugar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CadastrarLugar.Location = new System.Drawing.Point(1054, 481);
+            this.btn_CadastrarLugar.Name = "btn_CadastrarLugar";
+            this.btn_CadastrarLugar.Size = new System.Drawing.Size(101, 48);
+            this.btn_CadastrarLugar.TabIndex = 8;
+            this.btn_CadastrarLugar.Text = "Cadastrar";
+            this.btn_CadastrarLugar.UseVisualStyleBackColor = true;
+            this.btn_CadastrarLugar.Click += new System.EventHandler(this.btn_CadastrarLugar_Click);
             // 
             // frm_CadLugar
             // 
@@ -275,15 +275,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1167, 595);
+            this.Controls.Add(this.btn_CadastrarLugar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.msktb_precoLugar);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.btn_Cadastrar);
             this.Controls.Add(this.btn_sair);
             this.Name = "frm_CadLugar";
             this.Text = "frm_CadLugar";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frm_CadLugar_Load);
             this.msktb_precoLugar.ResumeLayout(false);
             this.msktb_precoLugar.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -295,7 +294,6 @@
 
         #endregion
         private System.Windows.Forms.Button btn_sair;
-        private System.Windows.Forms.Button btn_Cadastrar;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox msktb_precoLugar;
         private System.Windows.Forms.Label label8;
@@ -315,5 +313,6 @@
         private System.Windows.Forms.TextBox txt_numLogradouro;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.MaskedTextBox mskb_capacidade;
+        private System.Windows.Forms.Button btn_CadastrarLugar;
     }
 }

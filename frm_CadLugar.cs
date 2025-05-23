@@ -23,14 +23,9 @@ namespace orgEventos1
             InitializeComponent();
         }
 
-        private void frm_CadLugar_Load(object sender, EventArgs e)
-        {
-            InitializeComponent();
-        }
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
 
-        }
+
+
 
         private void btn_sair_Click(object sender, EventArgs e)
         {
@@ -38,6 +33,17 @@ namespace orgEventos1
         }
 
         private void btn_Cadastrar_Click(object sender, EventArgs e)
+        {
+
+
+
+
+
+        }
+
+
+
+        private void btn_CadastrarLugar_Click(object sender, EventArgs e)
         {
             Lugar lugar = new Lugar();
             Lugar_DAO lugar_DAO = new Lugar_DAO(_conexao);
@@ -51,8 +57,8 @@ namespace orgEventos1
                 lugar.nome = txt_NomeLugar.Text;
                 lugar.tipo = txt_TipoLugar.Text;
                 lugar.cep = mskb_Cep_Lugar.Text;
-                lugar.capacidade = mskb_capacidade.Text;
-                lugar.logradouro = txt_Logradouro.Text;                
+                lugar.capacidade = mskb_capacidade.Text.Replace("_", "").Trim();
+                lugar.logradouro = txt_Logradouro.Text;
                 lugar.numLogradouro = txt_numLogradouro.Text;
                 //lugar.preco = msktb_precoLugar.Text;
 
@@ -80,26 +86,21 @@ namespace orgEventos1
                     txt_numLogradouro.Text = string.Empty;
 
                     txt_preco.Text = string.Empty;
+
+                    txt_NomeLugar.Focus();
                 }
                 else
                 {
                     // ❌ Mostrar error si el precio es inválido
                     MessageBox.Show("Por favor, ingresa un valor válido para el precio (ej: 123.45).");
-                    msktb_precoLugar.Focus();
+
                     return; // No seguir guardando si el precio no es válido
                 }
 
 
-                
 
                
-
-                
-
             }
-
         }
-
-        
     }
 }

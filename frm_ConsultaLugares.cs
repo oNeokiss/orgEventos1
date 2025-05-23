@@ -22,5 +22,10 @@ namespace orgEventos1
             frm_CadLugar frm_cadlugar = new frm_CadLugar();
             frm_cadlugar.ShowDialog();
         }
+
+        private void btn_BuscarLugar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

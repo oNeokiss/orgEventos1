@@ -49,6 +49,7 @@
             this.btn_BuscarLugar.TabIndex = 17;
             this.btn_BuscarLugar.Text = "Pesquisar";
             this.btn_BuscarLugar.UseVisualStyleBackColor = true;
+            this.btn_BuscarLugar.Click += new System.EventHandler(this.btn_BuscarLugar_Click);
             // 
             // label2
             // 

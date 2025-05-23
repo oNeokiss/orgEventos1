@@ -46,6 +46,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_BuscarLugar = new System.Windows.Forms.TextBox();
             this.dtg_EventoLugar = new System.Windows.Forms.DataGridView();
+            this.lbl_TotalServicos = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txt_preco = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tab_Cliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_EventoCli)).BeginInit();
@@ -91,6 +96,7 @@
             this.btn_BuscarCli.TabIndex = 22;
             this.btn_BuscarCli.Text = "Pesquisar";
             this.btn_BuscarCli.UseVisualStyleBackColor = true;
+            this.btn_BuscarCli.Click += new System.EventHandler(this.btn_BuscarCli_Click_1);
             // 
             // label2
             // 
@@ -141,8 +147,10 @@
             // 
             // tab_Serviço
             // 
+            this.tab_Serviço.Controls.Add(this.label4);
             this.tab_Serviço.Controls.Add(this.btn_BuscarServico);
             this.tab_Serviço.Controls.Add(this.label1);
+            this.tab_Serviço.Controls.Add(this.lbl_TotalServicos);
             this.tab_Serviço.Controls.Add(this.txt_BuscarServico);
             this.tab_Serviço.Controls.Add(this.dtg_EventoServico);
             this.tab_Serviço.Location = new System.Drawing.Point(4, 22);
@@ -162,6 +170,7 @@
             this.btn_BuscarServico.TabIndex = 22;
             this.btn_BuscarServico.Text = "Pesquisar";
             this.btn_BuscarServico.UseVisualStyleBackColor = true;
+            this.btn_BuscarServico.Click += new System.EventHandler(this.btn_BuscarServico_Click);
             // 
             // label1
             // 
@@ -198,7 +207,7 @@
             this.tab_Lugar.Location = new System.Drawing.Point(4, 22);
             this.tab_Lugar.Name = "tab_Lugar";
             this.tab_Lugar.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_Lugar.Size = new System.Drawing.Size(1035, 446);
+            this.tab_Lugar.Size = new System.Drawing.Size(1035, 372);
             this.tab_Lugar.TabIndex = 1;
             this.tab_Lugar.Text = "Lugar";
             this.tab_Lugar.UseVisualStyleBackColor = true;
@@ -212,6 +221,7 @@
             this.btn_BuscarLugar.TabIndex = 22;
             this.btn_BuscarLugar.Text = "Pesquisar";
             this.btn_BuscarLugar.UseVisualStyleBackColor = true;
+            this.btn_BuscarLugar.Click += new System.EventHandler(this.btn_BuscarLugar_Click);
             // 
             // label3
             // 
@@ -239,11 +249,62 @@
             this.dtg_EventoLugar.Size = new System.Drawing.Size(959, 341);
             this.dtg_EventoLugar.TabIndex = 17;
             // 
+            // lbl_TotalServicos
+            // 
+            this.lbl_TotalServicos.AutoSize = true;
+            this.lbl_TotalServicos.Font = new System.Drawing.Font("Arial", 21.75F);
+            this.lbl_TotalServicos.Location = new System.Drawing.Point(759, 401);
+            this.lbl_TotalServicos.Name = "lbl_TotalServicos";
+            this.lbl_TotalServicos.Size = new System.Drawing.Size(71, 33);
+            this.lbl_TotalServicos.TabIndex = 1;
+            this.lbl_TotalServicos.Text = "0,00";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(569, 554);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(52, 33);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "R$";
+            // 
+            // txt_preco
+            // 
+            this.txt_preco.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_preco.Location = new System.Drawing.Point(624, 556);
+            this.txt_preco.Name = "txt_preco";
+            this.txt_preco.Size = new System.Drawing.Size(118, 31);
+            this.txt_preco.TabIndex = 17;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(471, 554);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(86, 33);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Total:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(664, 401);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 33);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Valor:";
+            // 
             // frm_CadEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1167, 644);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.txt_preco);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.tabControl1);
             this.Name = "frm_CadEvento";
             this.Text = "frm_CadEvento";
@@ -258,6 +319,7 @@
             this.tab_Lugar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_EventoLugar)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -281,5 +343,10 @@
         private System.Windows.Forms.Button btn_AddCli;
         private System.Windows.Forms.Button btn_EditarCli;
         private System.Windows.Forms.DataGridView dtg_EventoCli;
+        private System.Windows.Forms.Label lbl_TotalServicos;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txt_preco;
+        private System.Windows.Forms.Label label8;
     }
 }
