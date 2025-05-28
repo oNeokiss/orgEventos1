@@ -528,7 +528,7 @@ namespace orgEventos1
             {
                 id_cliente = idCliente,  // pegar do DataGridView
                 id_lugar = idLugar,
-                DataEvento = dtp_Data.Value.Date,
+                data_evento = dtp_Data.Value.Date,
                 hora_inicio = dtp_HoraInicio.Value.TimeOfDay,
                 hora_fim = dtp_HoraFim.Value.TimeOfDay
             };
