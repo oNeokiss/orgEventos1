@@ -526,11 +526,12 @@ namespace orgEventos1
 
             Evento evento = new Evento
             {
-                id_cliente = idCliente,  // pegar do DataGridView
+                id_cliente = idCliente,
                 id_lugar = idLugar,
-                data_evento = dtp_Data.Value.Date,
+                dia_evento = dtp_Data.Value.Date,  // <- Aquí debe ser "dia_evento"
                 hora_inicio = dtp_HoraInicio.Value.TimeOfDay,
-                hora_fim = dtp_HoraFim.Value.TimeOfDay
+                hora_fim = dtp_HoraFim.Value.TimeOfDay,
+                preco = 0
             };
 
             Evento_DAO eventoDAO = new Evento_DAO(_conexao);
@@ -546,8 +547,8 @@ namespace orgEventos1
                     int idServico = Convert.ToInt32(row.Cells["id_servico"].Value);
                     listaServicos.Add(new ServicoDoEvento
                     {
-                        fk_evento_id_evento = idEventoGerado,
-                        fk_servico_id_servico = idServico
+                        id_evento = idEventoGerado,
+                        id_servico = idServico
                     });
                 }
             }

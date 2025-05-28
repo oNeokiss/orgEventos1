@@ -26,7 +26,7 @@ namespace orgEventos1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SJR0577175W10-1\\SQLEXPRESS;Initial Catalog=Atividade;Integrated Secur" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SJR0577174W10-1\\SQLEXPRESS;Initial Catalog=Atividade;Integrated Secur" +
             "ity=True;TrustServerCertificate=True")]
         public string conexao {
             get {

@@ -111,6 +111,7 @@
             this.btn_BuscarServico.TabIndex = 20;
             this.btn_BuscarServico.Text = "Pesquisar";
             this.btn_BuscarServico.UseVisualStyleBackColor = true;
+            this.btn_BuscarServico.Click += new System.EventHandler(this.btn_BuscarServico_Click);
             // 
             // label3
             // 

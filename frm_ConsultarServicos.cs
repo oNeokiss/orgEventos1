@@ -88,5 +88,10 @@ namespace orgEventos1
         {
             this.Close();
         }
+
+        private void btn_BuscarServico_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -22,34 +22,50 @@ namespace orgEventos1
         {
             InitializeComponent();
             ListarEvento();
-            //CarregarEventos();
+           
         }
 
         private void ListarEvento()
         {
-            Servico_DAO servico_DAO = new Servico_DAO(_conexao); // Instancia o DAO para serviços
-            string busca = txt_BuscarEvento.Text.ToString(); // Obtém o texto da caixa de busca
-            DataSet dsServico = new DataSet(); // Cria um DataSet que receberá os dados
-            dsServico = servico_DAO.BuscarServico(busca); // Executa a busca
+            Evento_DAO eventoDAO = new Evento_DAO(_conexao);
+            var listaEventos = eventoDAO.ListarEventosDetalhados();
 
-            dtgv_ConsultarEvento.DataSource = dsServico; // Define os dados retornados como fonte para o DataGridView
-            dtgv_ConsultarEvento.DataMember = "Servico"; // Especifica qual tabela do DataSet deve ser usada
+            dtgv_ConsultarEvento.DataSource = listaEventos; // asigna la lista
+
+            // Cambia los headers según los nombres de propiedades
+            dtgv_ConsultarEvento.Columns["nomeCliente"].HeaderText = "Cliente";
+            dtgv_ConsultarEvento.Columns["nomeLugar"].HeaderText = "Lugar";
+            dtgv_ConsultarEvento.Columns["DataEvento"].HeaderText = "Data";
+            dtgv_ConsultarEvento.Columns["HoraInicio"].HeaderText = "Início";
+            dtgv_ConsultarEvento.Columns["HoraFim"].HeaderText = "Fim";
+
+            // Opcional: formatear columnas fecha y hora
+            dtgv_ConsultarEvento.Columns["DataEvento"].DefaultCellStyle.Format = "dd/MM/yyyy";
+            dtgv_ConsultarEvento.Columns["HoraInicio"].DefaultCellStyle.Format = @"hh\:mm";
+            dtgv_ConsultarEvento.Columns["HoraFim"].DefaultCellStyle.Format = @"hh\:mm";
         }
 
         //private void CarregarEventos()
         //{
         //    Evento_DAO eventoDAO = new Evento_DAO(_conexao);
-        //    var eventos = eventoDAO.ListarEventosDetalhados();
+        //    var listaEventos = eventoDAO.ListarEventosDetalhados();
 
-        //    dtgv_ConsultarEvento.DataSource = eventos;
+        //    dtgv_ConsultarEvento.DataSource = listaEventos; // asigna la lista
 
-        //    // Ajustar headers si querés
-        //    dtgv_ConsultarEvento.Columns["NomeCliente"].HeaderText = "Cliente";
-        //    dtgv_ConsultarEvento.Columns["NomeLugar"].HeaderText = "Lugar";
+        //    // Cambia los headers según los nombres de propiedades
+        //    dtgv_ConsultarEvento.Columns["nomeCliente"].HeaderText = "Cliente";
+        //    dtgv_ConsultarEvento.Columns["nomeLugar"].HeaderText = "Lugar";
         //    dtgv_ConsultarEvento.Columns["DataEvento"].HeaderText = "Data";
         //    dtgv_ConsultarEvento.Columns["HoraInicio"].HeaderText = "Início";
         //    dtgv_ConsultarEvento.Columns["HoraFim"].HeaderText = "Fim";
+
+        //    // Opcional: formatear columnas fecha y hora
+        //    dtgv_ConsultarEvento.Columns["DataEvento"].DefaultCellStyle.Format = "dd/MM/yyyy";
+        //    dtgv_ConsultarEvento.Columns["HoraInicio"].DefaultCellStyle.Format = @"hh\:mm";
+        //    dtgv_ConsultarEvento.Columns["HoraFim"].DefaultCellStyle.Format = @"hh\:mm";
         //}
+
+
 
 
         private void btn_adicionar_Click(object sender, EventArgs e)
