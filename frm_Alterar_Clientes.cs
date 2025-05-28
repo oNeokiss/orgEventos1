@@ -30,13 +30,13 @@ namespace orgEventos1
                 cliente = cliente_DAO.ObtemCliente(codigo);
 
 
-                if (cliente != null)
+                if (cliente == null)
                 {
                     MessageBox.Show("Cliente nao encontrado", "ATENCAO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     this.Close();
 
                 }
-
+                label1.Text = cliente.id_cliente.ToString();
                 txt_nomeCliente.Text = cliente.nome;
                 msktx_cpfCli.Text = cliente.cpf;
                 msktx_telefoneCli.Text = cliente.telefone;
@@ -65,21 +65,33 @@ namespace orgEventos1
             }
             else
             {
-                cliente.nome = txt_nomeCliente.Text;
-                cliente.cpf = msktx_cpfCli.Text;
-                cliente.telefone = msktx_telefoneCli.Text;
-                cliente.email = txt_emailCliente.Text;
-                cliente.logradouro = txt_logradouro.Text;
-                cliente.dataNasc = datPick_nascCli.Value;
-                cliente.numLogradouro = txt_numLogradouro.Text;
-                cliente.complemento = txt_complemento.Text;
 
-                cliente_DAO.AlterarCliente(cliente);
+                try
+                {
 
-                MessageBox.Show("Cadastro com Sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cliente.nome = txt_nomeCliente.Text;
+                    cliente.cpf = msktx_cpfCli.Text;
+                    cliente.telefone = msktx_telefoneCli.Text;
+                    cliente.email = txt_emailCliente.Text;
+                    cliente.logradouro = txt_logradouro.Text;
+                    cliente.dataNasc = datPick_nascCli.Value;
+                    cliente.numLogradouro = txt_numLogradouro.Text;
+                    cliente.complemento = txt_complemento.Text;
 
-                this.Close();   
+                    int codigo = Convert.ToInt32(label1.Text);
+                    cliente.id_cliente = codigo;
 
+                    cliente_DAO.AlterarCliente(cliente);
+
+                    MessageBox.Show("Cadastro com Sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    this.Close();
+                }
+                catch (Exception erro)
+                {
+                    // Mostra mensagem de erro se algo der errado
+                    MessageBox.Show("Ocorreu um erro" + erro, "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
             }
         }

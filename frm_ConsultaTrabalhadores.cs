@@ -41,7 +41,7 @@ namespace orgEventos1
             dsTrabalhador = trabalhador_DAO.BuscarTrabalhador(busca); // Chama método de busca no DAO
 
             dtgv_ConsultarTrabalhador.DataSource = dsTrabalhador; // Define fonte de dados
-            dtgv_ConsultarTrabalhador.DataMember = "Cliente"; // Define a tabela a ser usada no DataSet
+            dtgv_ConsultarTrabalhador.DataMember = "Trabalhador"; // Define a tabela a ser usada no DataSet
 
 
 
