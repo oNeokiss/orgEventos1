@@ -90,7 +90,7 @@
             this.btn_excluir.TabIndex = 4;
             this.btn_excluir.Text = "Excluir";
             this.btn_excluir.UseVisualStyleBackColor = true;
-           
+            this.btn_excluir.Click += new System.EventHandler(this.btn_excluir_Click_1);
             // 
             // label1
             // 
@@ -146,6 +146,7 @@
             this.Controls.Add(this.btn_sairConsultaCliente);
             this.Controls.Add(this.dtgv_ConsultarCliente);
             this.Name = "frm_ConsultaCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de Cliente";
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_ConsultarCliente)).EndInit();
             this.ResumeLayout(false);

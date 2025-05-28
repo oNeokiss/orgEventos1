@@ -33,11 +33,11 @@
             this.btn_AddServico = new System.Windows.Forms.Button();
             this.btn_EditarServico = new System.Windows.Forms.Button();
             this.btn_sairConsultaServico = new System.Windows.Forms.Button();
-            this.dtgv_ConsultarCliente = new System.Windows.Forms.DataGridView();
+            this.dtgv_ConsultarServico = new System.Windows.Forms.DataGridView();
             this.btn_BuscarServico = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtBox_PesquisarLugar = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_ConsultarCliente)).BeginInit();
+            this.txt_BuscarServico = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_ConsultarServico)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -59,6 +59,7 @@
             this.btn_DelServico.TabIndex = 12;
             this.btn_DelServico.Text = "Excluir";
             this.btn_DelServico.UseVisualStyleBackColor = true;
+            this.btn_DelServico.Click += new System.EventHandler(this.btn_DelServico_Click);
             // 
             // btn_AddServico
             // 
@@ -80,6 +81,7 @@
             this.btn_EditarServico.TabIndex = 10;
             this.btn_EditarServico.Text = "Editar";
             this.btn_EditarServico.UseVisualStyleBackColor = true;
+            this.btn_EditarServico.Click += new System.EventHandler(this.btn_EditarServico_Click);
             // 
             // btn_sairConsultaServico
             // 
@@ -90,14 +92,15 @@
             this.btn_sairConsultaServico.TabIndex = 9;
             this.btn_sairConsultaServico.Text = "Sair";
             this.btn_sairConsultaServico.UseVisualStyleBackColor = true;
+            this.btn_sairConsultaServico.Click += new System.EventHandler(this.btn_sairConsultaServico_Click);
             // 
-            // dtgv_ConsultarCliente
+            // dtgv_ConsultarServico
             // 
-            this.dtgv_ConsultarCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv_ConsultarCliente.Location = new System.Drawing.Point(18, 104);
-            this.dtgv_ConsultarCliente.Name = "dtgv_ConsultarCliente";
-            this.dtgv_ConsultarCliente.Size = new System.Drawing.Size(1138, 381);
-            this.dtgv_ConsultarCliente.TabIndex = 8;
+            this.dtgv_ConsultarServico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_ConsultarServico.Location = new System.Drawing.Point(18, 104);
+            this.dtgv_ConsultarServico.Name = "dtgv_ConsultarServico";
+            this.dtgv_ConsultarServico.Size = new System.Drawing.Size(1138, 381);
+            this.dtgv_ConsultarServico.TabIndex = 8;
             // 
             // btn_BuscarServico
             // 
@@ -119,13 +122,13 @@
             this.label3.TabIndex = 19;
             this.label3.Text = "Pesquisar:";
             // 
-            // txtBox_PesquisarLugar
+            // txt_BuscarServico
             // 
-            this.txtBox_PesquisarLugar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_PesquisarLugar.Location = new System.Drawing.Point(680, 72);
-            this.txtBox_PesquisarLugar.Name = "txtBox_PesquisarLugar";
-            this.txtBox_PesquisarLugar.Size = new System.Drawing.Size(368, 26);
-            this.txtBox_PesquisarLugar.TabIndex = 18;
+            this.txt_BuscarServico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_BuscarServico.Location = new System.Drawing.Point(680, 72);
+            this.txt_BuscarServico.Name = "txt_BuscarServico";
+            this.txt_BuscarServico.Size = new System.Drawing.Size(368, 26);
+            this.txt_BuscarServico.TabIndex = 18;
             // 
             // frm_ConsultarServicos
             // 
@@ -134,16 +137,17 @@
             this.ClientSize = new System.Drawing.Size(1167, 595);
             this.Controls.Add(this.btn_BuscarServico);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtBox_PesquisarLugar);
+            this.Controls.Add(this.txt_BuscarServico);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_DelServico);
             this.Controls.Add(this.btn_AddServico);
             this.Controls.Add(this.btn_EditarServico);
             this.Controls.Add(this.btn_sairConsultaServico);
-            this.Controls.Add(this.dtgv_ConsultarCliente);
+            this.Controls.Add(this.dtgv_ConsultarServico);
             this.Name = "frm_ConsultarServicos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_ConsultarLugares";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_ConsultarCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_ConsultarServico)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,9 +159,9 @@
         private System.Windows.Forms.Button btn_AddServico;
         private System.Windows.Forms.Button btn_EditarServico;
         private System.Windows.Forms.Button btn_sairConsultaServico;
-        private System.Windows.Forms.DataGridView dtgv_ConsultarCliente;
+        private System.Windows.Forms.DataGridView dtgv_ConsultarServico;
         private System.Windows.Forms.Button btn_BuscarServico;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtBox_PesquisarLugar;
+        private System.Windows.Forms.TextBox txt_BuscarServico;
     }
 }

@@ -148,6 +148,7 @@
             this.Controls.Add(this.btn_sairLogin);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmCad_Usuarios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCad_Usuarios";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

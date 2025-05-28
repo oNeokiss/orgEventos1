@@ -18,6 +18,7 @@ namespace orgEventos1
         public frm_ConsultaTrabalhadores()
         {
             InitializeComponent();
+            ListarTrabalhador();
         }
 
         private void btn_sairConsultarTrabalhador_Click(object sender, EventArgs e)
@@ -66,8 +67,8 @@ namespace orgEventos1
                 if (resultado == DialogResult.Yes)
                 {
                     // Cria o DAO e exclui o médico
-                    Cliente_DAO cliente_dao = new Cliente_DAO(_conexao);
-                    cliente_dao.ExcluirCliente(codigo);
+                    Trabalhador_DAO trabalhador_dao = new Trabalhador_DAO(_conexao);
+                    trabalhador_dao.ExcluirTrabalhador(codigo);
 
                     // Atualiza a lista após exclusão
                     ListarTrabalhador();
@@ -82,6 +83,24 @@ namespace orgEventos1
                         MessageBoxIcon.Warning);
                 }
             }
+        }
+
+        private void btn_EditarTrabalhador_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_pesquisarTrabalhador_Click(object sender, EventArgs e)
+        {
+            if (txtBox_PesquisarTrabalhador.Text == "")
+            {
+                MessageBox.Show("Informe um conteúdo!"); // Alerta se não foi digitado nada
+                txtBox_PesquisarTrabalhador.Focus(); // Coloca o cursor no campo de texto
+                ListarTrabalhador(); // Lista todos os serviços (sem filtro)
+                return;
+            }
+
+            ListarTrabalhador(); // Realiza a busca filtrada
         }
     }
 }

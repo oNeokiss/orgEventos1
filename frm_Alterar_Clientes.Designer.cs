@@ -272,6 +272,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "frm_Alterar_Clientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_Alterar_Clientes";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

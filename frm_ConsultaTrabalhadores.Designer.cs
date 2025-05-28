@@ -99,6 +99,7 @@
             this.btn_EditarTrabalhador.TabIndex = 10;
             this.btn_EditarTrabalhador.Text = "Editar";
             this.btn_EditarTrabalhador.UseVisualStyleBackColor = true;
+            this.btn_EditarTrabalhador.Click += new System.EventHandler(this.btn_EditarTrabalhador_Click);
             // 
             // btn_sairConsultarTrabalhador
             // 
@@ -128,6 +129,7 @@
             this.btn_pesquisarTrabalhador.TabIndex = 16;
             this.btn_pesquisarTrabalhador.Text = "Pesquisar";
             this.btn_pesquisarTrabalhador.UseVisualStyleBackColor = true;
+            this.btn_pesquisarTrabalhador.Click += new System.EventHandler(this.btn_pesquisarTrabalhador_Click);
             // 
             // frm_ConsultaTrabalhadores
             // 
@@ -144,6 +146,7 @@
             this.Controls.Add(this.btn_sairConsultarTrabalhador);
             this.Controls.Add(this.dtgv_ConsultarTrabalhador);
             this.Name = "frm_ConsultaTrabalhadores";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_CadTrabalhadores";
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_ConsultarTrabalhador)).EndInit();
             this.ResumeLayout(false);

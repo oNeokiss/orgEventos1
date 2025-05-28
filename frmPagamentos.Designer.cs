@@ -83,6 +83,7 @@
             this.label5.Size = new System.Drawing.Size(73, 41);
             this.label5.TabIndex = 1;
             this.label5.Text = "ID :";
+            this.label5.Visible = false;
             // 
             // lbl_IDPagamento
             // 
@@ -93,6 +94,7 @@
             this.lbl_IDPagamento.Size = new System.Drawing.Size(187, 35);
             this.lbl_IDPagamento.TabIndex = 2;
             this.lbl_IDPagamento.Text = "ID aqui";
+            this.lbl_IDPagamento.Visible = false;
             // 
             // groupBox1
             // 
@@ -168,6 +170,7 @@
             this.Controls.Add(this.lbl_IDPagamento);
             this.Controls.Add(this.label5);
             this.Name = "frmPagamentos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPagamentos";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -139,25 +139,24 @@ namespace orgEventos1
         }
 
 
-        
 
-        
 
-        
+
+
+
 
         private void btn_Editar_Click(object sender, EventArgs e)
         {
-            frm_Alterar_Clientes frm_alterar_clientes = new frm_Alterar_Clientes(int codigo);
-            frm_alterar_clientes.ShowDialog();
 
-            if (dtg_BuscarPac.SelectedRows.Count > 0)
+
+            if (dtgv_ConsultarCliente.SelectedRows.Count > 0)
             {
-                int codigo = Convert.ToInt32(dtg_BuscarPac.CurrentRow.Cells[0].Value);
+                int codigo = Convert.ToInt32(dtgv_ConsultarCliente.CurrentRow.Cells[0].Value);
 
-                frmAlterarPaciente frmalterarpaciente = new frmAlterarPaciente(codigo);
-                frmalterarpaciente.ShowDialog();
+                frm_Alterar_Clientes frm_alterar_clientes = new frm_Alterar_Clientes(codigo);
+                frm_alterar_clientes.ShowDialog();
 
-                ListarPaciente();
+                ListarCliente();
 
             }
             else
@@ -170,11 +169,48 @@ namespace orgEventos1
 
         }
 
-        
+
 
         private void btn_excluir_Click(object sender, EventArgs e)
         {
             // Verifica se há alguma linha selecionada no DataGrid
+            if (dtgv_ConsultarCliente.SelectedRows.Count > 0)
+            {
+                // Pega o código do médico da linha selecionada
+                int codigo = Convert.ToInt32(dtgv_ConsultarCliente.CurrentRow.Cells[0].Value);
+
+                // Exibe um MessageBox de confirmação
+                var resultado = MessageBox.Show(
+                    "Deseja excluir esse registro?",
+                    "Pergunta",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question,
+                    MessageBoxDefaultButton.Button2);
+
+                // Se o usuário confirmar a exclusão
+                if (resultado == DialogResult.Yes)
+                {
+                    // Cria o DAO e exclui o médico
+                    Cliente_DAO cliente_dao = new Cliente_DAO(_conexao);
+                    cliente_dao.ExcluirCliente(codigo);
+
+                    // Atualiza a lista após exclusão
+                    ListarCliente();
+                }
+                else
+                {
+                    // Caso não tenha selecionado nada ou cancele, exibe aviso
+                    MessageBox.Show(
+                        "Selecione um registro para exclusão!",
+                        "Atenção",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                }
+            }
+        }
+
+        private void btn_excluir_Click_1(object sender, EventArgs e)
+        {
             if (dtgv_ConsultarCliente.SelectedRows.Count > 0)
             {
                 // Pega o código do médico da linha selecionada

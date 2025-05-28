@@ -171,6 +171,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "frm_Alterar_Trabalhadores";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_Alterar_Trabalhadores";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

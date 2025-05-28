@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.Horario = new System.Windows.Forms.TabControl();
             this.tab_Cliente = new System.Windows.Forms.TabPage();
             this.btn_BuscarCli = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,8 +37,10 @@
             this.btn_EditarCli = new System.Windows.Forms.Button();
             this.dtg_EventoCli = new System.Windows.Forms.DataGridView();
             this.tab_Serviço = new System.Windows.Forms.TabPage();
+            this.label4 = new System.Windows.Forms.Label();
             this.btn_BuscarServico = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbl_TotalServicos = new System.Windows.Forms.Label();
             this.txt_BuscarServico = new System.Windows.Forms.TextBox();
             this.dtg_EventoServico = new System.Windows.Forms.DataGridView();
             this.tab_Lugar = new System.Windows.Forms.TabPage();
@@ -46,30 +48,38 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_BuscarLugar = new System.Windows.Forms.TextBox();
             this.dtg_EventoLugar = new System.Windows.Forms.DataGridView();
-            this.lbl_TotalServicos = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txt_preco = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tabControl1.SuspendLayout();
+            this.btn_SalvarEvent = new System.Windows.Forms.Button();
+            this.dtp_HoraInicio = new System.Windows.Forms.DateTimePicker();
+            this.tab_Horario = new System.Windows.Forms.TabPage();
+            this.dtp_HoraFim = new System.Windows.Forms.DateTimePicker();
+            this.dtp_Data = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Horario.SuspendLayout();
             this.tab_Cliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_EventoCli)).BeginInit();
             this.tab_Serviço.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_EventoServico)).BeginInit();
             this.tab_Lugar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_EventoLugar)).BeginInit();
+            this.tab_Horario.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // Horario
             // 
-            this.tabControl1.Controls.Add(this.tab_Cliente);
-            this.tabControl1.Controls.Add(this.tab_Serviço);
-            this.tabControl1.Controls.Add(this.tab_Lugar);
-            this.tabControl1.Location = new System.Drawing.Point(57, 55);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1043, 472);
-            this.tabControl1.TabIndex = 0;
+            this.Horario.Controls.Add(this.tab_Cliente);
+            this.Horario.Controls.Add(this.tab_Serviço);
+            this.Horario.Controls.Add(this.tab_Lugar);
+            this.Horario.Controls.Add(this.tab_Horario);
+            this.Horario.Location = new System.Drawing.Point(57, 55);
+            this.Horario.Name = "Horario";
+            this.Horario.SelectedIndex = 0;
+            this.Horario.Size = new System.Drawing.Size(1043, 472);
+            this.Horario.TabIndex = 0;
             // 
             // tab_Cliente
             // 
@@ -136,6 +146,7 @@
             this.btn_EditarCli.TabIndex = 18;
             this.btn_EditarCli.Text = "Editar";
             this.btn_EditarCli.UseVisualStyleBackColor = true;
+            this.btn_EditarCli.Click += new System.EventHandler(this.btn_EditarCli_Click_1);
             // 
             // dtg_EventoCli
             // 
@@ -161,6 +172,16 @@
             this.tab_Serviço.Text = "Serviço";
             this.tab_Serviço.UseVisualStyleBackColor = true;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(664, 401);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 33);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Valor:";
+            // 
             // btn_BuscarServico
             // 
             this.btn_BuscarServico.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -181,6 +202,16 @@
             this.label1.Size = new System.Drawing.Size(244, 29);
             this.label1.TabIndex = 21;
             this.label1.Text = "Selecione o serviço";
+            // 
+            // lbl_TotalServicos
+            // 
+            this.lbl_TotalServicos.AutoSize = true;
+            this.lbl_TotalServicos.Font = new System.Drawing.Font("Arial", 21.75F);
+            this.lbl_TotalServicos.Location = new System.Drawing.Point(759, 401);
+            this.lbl_TotalServicos.Name = "lbl_TotalServicos";
+            this.lbl_TotalServicos.Size = new System.Drawing.Size(71, 33);
+            this.lbl_TotalServicos.TabIndex = 1;
+            this.lbl_TotalServicos.Text = "0,00";
             // 
             // txt_BuscarServico
             // 
@@ -207,7 +238,7 @@
             this.tab_Lugar.Location = new System.Drawing.Point(4, 22);
             this.tab_Lugar.Name = "tab_Lugar";
             this.tab_Lugar.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_Lugar.Size = new System.Drawing.Size(1035, 372);
+            this.tab_Lugar.Size = new System.Drawing.Size(1035, 446);
             this.tab_Lugar.TabIndex = 1;
             this.tab_Lugar.Text = "Lugar";
             this.tab_Lugar.UseVisualStyleBackColor = true;
@@ -249,16 +280,6 @@
             this.dtg_EventoLugar.Size = new System.Drawing.Size(959, 341);
             this.dtg_EventoLugar.TabIndex = 17;
             // 
-            // lbl_TotalServicos
-            // 
-            this.lbl_TotalServicos.AutoSize = true;
-            this.lbl_TotalServicos.Font = new System.Drawing.Font("Arial", 21.75F);
-            this.lbl_TotalServicos.Location = new System.Drawing.Point(759, 401);
-            this.lbl_TotalServicos.Name = "lbl_TotalServicos";
-            this.lbl_TotalServicos.Size = new System.Drawing.Size(71, 33);
-            this.lbl_TotalServicos.TabIndex = 1;
-            this.lbl_TotalServicos.Text = "0,00";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -287,28 +308,98 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Total:";
             // 
-            // label4
+            // btn_SalvarEvent
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(664, 401);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 33);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "Valor:";
+            this.btn_SalvarEvent.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SalvarEvent.Location = new System.Drawing.Point(868, 550);
+            this.btn_SalvarEvent.Name = "btn_SalvarEvent";
+            this.btn_SalvarEvent.Size = new System.Drawing.Size(163, 46);
+            this.btn_SalvarEvent.TabIndex = 19;
+            this.btn_SalvarEvent.Text = "Cadastrar";
+            this.btn_SalvarEvent.UseVisualStyleBackColor = true;
+            this.btn_SalvarEvent.Click += new System.EventHandler(this.btn_SalvarEvent_Click);
+            // 
+            // dtp_HoraInicio
+            // 
+            this.dtp_HoraInicio.Location = new System.Drawing.Point(136, 300);
+            this.dtp_HoraInicio.Name = "dtp_HoraInicio";
+            this.dtp_HoraInicio.Size = new System.Drawing.Size(200, 20);
+            this.dtp_HoraInicio.TabIndex = 20;
+            // 
+            // tab_Horario
+            // 
+            this.tab_Horario.Controls.Add(this.label7);
+            this.tab_Horario.Controls.Add(this.label6);
+            this.tab_Horario.Controls.Add(this.label5);
+            this.tab_Horario.Controls.Add(this.dtp_Data);
+            this.tab_Horario.Controls.Add(this.dtp_HoraFim);
+            this.tab_Horario.Controls.Add(this.dtp_HoraInicio);
+            this.tab_Horario.Location = new System.Drawing.Point(4, 22);
+            this.tab_Horario.Name = "tab_Horario";
+            this.tab_Horario.Padding = new System.Windows.Forms.Padding(3);
+            this.tab_Horario.Size = new System.Drawing.Size(1035, 446);
+            this.tab_Horario.TabIndex = 3;
+            this.tab_Horario.Text = "Horario";
+            this.tab_Horario.UseVisualStyleBackColor = true;
+            // 
+            // dtp_HoraFim
+            // 
+            this.dtp_HoraFim.Location = new System.Drawing.Point(502, 300);
+            this.dtp_HoraFim.Name = "dtp_HoraFim";
+            this.dtp_HoraFim.Size = new System.Drawing.Size(200, 20);
+            this.dtp_HoraFim.TabIndex = 21;
+            // 
+            // dtp_Data
+            // 
+            this.dtp_Data.Location = new System.Drawing.Point(136, 92);
+            this.dtp_Data.Name = "dtp_Data";
+            this.dtp_Data.Size = new System.Drawing.Size(200, 20);
+            this.dtp_Data.TabIndex = 22;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(130, 56);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(84, 33);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "Data:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(142, 264);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(132, 33);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "Começo:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(496, 264);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(73, 33);
+            this.label7.TabIndex = 26;
+            this.label7.Text = "Fim:";
             // 
             // frm_CadEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1167, 644);
+            this.Controls.Add(this.btn_SalvarEvent);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txt_preco);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.Horario);
             this.Name = "frm_CadEvento";
-            this.Text = "frm_CadEvento";
-            this.tabControl1.ResumeLayout(false);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cadastro de Evento";
+            this.Horario.ResumeLayout(false);
             this.tab_Cliente.ResumeLayout(false);
             this.tab_Cliente.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_EventoCli)).EndInit();
@@ -318,6 +409,8 @@
             this.tab_Lugar.ResumeLayout(false);
             this.tab_Lugar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_EventoLugar)).EndInit();
+            this.tab_Horario.ResumeLayout(false);
+            this.tab_Horario.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -325,7 +418,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl Horario;
         private System.Windows.Forms.TabPage tab_Cliente;
         private System.Windows.Forms.TabPage tab_Lugar;
         private System.Windows.Forms.TabPage tab_Serviço;
@@ -348,5 +441,13 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txt_preco;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btn_SalvarEvent;
+        private System.Windows.Forms.TabPage tab_Horario;
+        private System.Windows.Forms.DateTimePicker dtp_HoraInicio;
+        private System.Windows.Forms.DateTimePicker dtp_Data;
+        private System.Windows.Forms.DateTimePicker dtp_HoraFim;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
     }
 }

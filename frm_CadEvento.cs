@@ -18,6 +18,7 @@ namespace orgEventos1
         string _conexao = orgEventos1.Properties.Settings.Default.conexao;
 
 
+
         public frm_CadEvento()
         {
             InitializeComponent();
@@ -63,6 +64,16 @@ namespace orgEventos1
             // Adiciona manipulador para evento disparado após o término do binding dos dados
             // Serve para aplicar ajustes finais ao layout ou conteúdo
             dtg_EventoServico.DataBindingComplete += dtg_EventoServico_DataBindingComplete;
+
+            dtp_HoraInicio.Format = DateTimePickerFormat.Time;
+            dtp_HoraInicio.ShowUpDown = true;
+
+            dtp_HoraFim.Format = DateTimePickerFormat.Time;
+            dtp_HoraFim.ShowUpDown = true;
+
+            dtp_Data.Format = DateTimePickerFormat.Custom;
+            dtp_Data.CustomFormat = "dd/MM/yyyy";
+
         }
 
 
@@ -489,6 +500,61 @@ namespace orgEventos1
                         row.Cells["descricao"].Value = texto + "\n"; // Adiciona quebra de linha
                 }
             }
+        }
+
+        private void btn_EditarCli_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_SalvarEvent_Click(object sender, EventArgs e)
+        {
+            if (dtg_EventoCli.CurrentRow == null)
+            {
+                MessageBox.Show("Selecione um cliente!");
+                return;
+            }
+            int idCliente = Convert.ToInt32(dtg_EventoCli.CurrentRow.Cells["id_cliente"].Value);
+
+            // Verifica se há uma linha selecionada no DataGridView de lugar
+            if (dtg_EventoLugar.CurrentRow == null)
+            {
+                MessageBox.Show("Selecione um lugar!");
+                return;
+            }
+            int idLugar = Convert.ToInt32(dtg_EventoLugar.CurrentRow.Cells["id_lugar"].Value);
+
+            Evento evento = new Evento
+            {
+                id_cliente = idCliente,  // pegar do DataGridView
+                id_lugar = idLugar,
+                DataEvento = dtp_Data.Value.Date,
+                hora_inicio = dtp_HoraInicio.Value.TimeOfDay,
+                hora_fim = dtp_HoraFim.Value.TimeOfDay
+            };
+
+            Evento_DAO eventoDAO = new Evento_DAO(_conexao);
+            int idEventoGerado = eventoDAO.InserirEvento(evento);
+
+            List<ServicoDoEvento> listaServicos = new List<ServicoDoEvento>();
+
+            foreach (DataGridViewRow row in dtg_EventoServico.Rows)
+            {
+                bool selecionado = Convert.ToBoolean(row.Cells["Selecionado"].Value ?? false);
+                if (selecionado)
+                {
+                    int idServico = Convert.ToInt32(row.Cells["id_servico"].Value);
+                    listaServicos.Add(new ServicoDoEvento
+                    {
+                        fk_evento_id_evento = idEventoGerado,
+                        fk_servico_id_servico = idServico
+                    });
+                }
+            }
+
+            eventoDAO.InserirServicosDoEvento(listaServicos, idEventoGerado);
+
+            MessageBox.Show("Evento salvo com sucesso!");
         }
     }
 }

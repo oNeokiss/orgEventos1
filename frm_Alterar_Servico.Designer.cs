@@ -172,6 +172,7 @@
             this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.label1);
             this.Name = "frm_Alterar_Servico";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_Alterar_Servico";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

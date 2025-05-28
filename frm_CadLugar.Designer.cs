@@ -56,7 +56,7 @@
             // btn_sair
             // 
             this.btn_sair.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_sair.Location = new System.Drawing.Point(1054, 535);
+            this.btn_sair.Location = new System.Drawing.Point(1054, 583);
             this.btn_sair.Name = "btn_sair";
             this.btn_sair.Size = new System.Drawing.Size(101, 48);
             this.btn_sair.TabIndex = 4;
@@ -261,7 +261,7 @@
             // btn_CadastrarLugar
             // 
             this.btn_CadastrarLugar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_CadastrarLugar.Location = new System.Drawing.Point(1054, 481);
+            this.btn_CadastrarLugar.Location = new System.Drawing.Point(1054, 529);
             this.btn_CadastrarLugar.Name = "btn_CadastrarLugar";
             this.btn_CadastrarLugar.Size = new System.Drawing.Size(101, 48);
             this.btn_CadastrarLugar.TabIndex = 8;
@@ -274,13 +274,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1167, 595);
+            this.ClientSize = new System.Drawing.Size(1167, 644);
             this.Controls.Add(this.btn_CadastrarLugar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.msktb_precoLugar);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btn_sair);
             this.Name = "frm_CadLugar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_CadLugar";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.msktb_precoLugar.ResumeLayout(false);

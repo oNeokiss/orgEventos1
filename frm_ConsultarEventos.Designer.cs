@@ -30,7 +30,7 @@
         {
             this.btn_pesqusiarCliente = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtBox_PesquisarEvento = new System.Windows.Forms.TextBox();
+            this.txt_BuscarEvento = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_excluir = new System.Windows.Forms.Button();
             this.btn_adicionar = new System.Windows.Forms.Button();
@@ -49,6 +49,7 @@
             this.btn_pesqusiarCliente.TabIndex = 17;
             this.btn_pesqusiarCliente.Text = "Pesquisar";
             this.btn_pesqusiarCliente.UseVisualStyleBackColor = true;
+            this.btn_pesqusiarCliente.Click += new System.EventHandler(this.btn_pesqusiarCliente_Click);
             // 
             // label2
             // 
@@ -60,13 +61,13 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "Pesquisar:";
             // 
-            // txtBox_PesquisarEvento
+            // txt_BuscarEvento
             // 
-            this.txtBox_PesquisarEvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_PesquisarEvento.Location = new System.Drawing.Point(679, 72);
-            this.txtBox_PesquisarEvento.Name = "txtBox_PesquisarEvento";
-            this.txtBox_PesquisarEvento.Size = new System.Drawing.Size(368, 26);
-            this.txtBox_PesquisarEvento.TabIndex = 15;
+            this.txt_BuscarEvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_BuscarEvento.Location = new System.Drawing.Point(679, 72);
+            this.txt_BuscarEvento.Name = "txt_BuscarEvento";
+            this.txt_BuscarEvento.Size = new System.Drawing.Size(368, 26);
+            this.txt_BuscarEvento.TabIndex = 15;
             // 
             // label1
             // 
@@ -87,6 +88,7 @@
             this.btn_excluir.TabIndex = 13;
             this.btn_excluir.Text = "Excluir";
             this.btn_excluir.UseVisualStyleBackColor = true;
+            this.btn_excluir.Click += new System.EventHandler(this.btn_excluir_Click);
             // 
             // btn_adicionar
             // 
@@ -108,6 +110,7 @@
             this.btn_Editar.TabIndex = 11;
             this.btn_Editar.Text = "Editar";
             this.btn_Editar.UseVisualStyleBackColor = true;
+            this.btn_Editar.Click += new System.EventHandler(this.btn_Editar_Click);
             // 
             // btn_sairConsultaCliente
             // 
@@ -118,6 +121,7 @@
             this.btn_sairConsultaCliente.TabIndex = 10;
             this.btn_sairConsultaCliente.Text = "Sair";
             this.btn_sairConsultaCliente.UseVisualStyleBackColor = true;
+            this.btn_sairConsultaCliente.Click += new System.EventHandler(this.btn_sairConsultaCliente_Click);
             // 
             // dtgv_ConsultarEvento
             // 
@@ -127,7 +131,7 @@
             this.dtgv_ConsultarEvento.Size = new System.Drawing.Size(1138, 381);
             this.dtgv_ConsultarEvento.TabIndex = 9;
             // 
-            // frm_Consultar_Eventos
+            // frm_ConsultarEventos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -135,14 +139,15 @@
             this.ClientSize = new System.Drawing.Size(1167, 595);
             this.Controls.Add(this.btn_pesqusiarCliente);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtBox_PesquisarEvento);
+            this.Controls.Add(this.txt_BuscarEvento);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_excluir);
             this.Controls.Add(this.btn_adicionar);
             this.Controls.Add(this.btn_Editar);
             this.Controls.Add(this.btn_sairConsultaCliente);
             this.Controls.Add(this.dtgv_ConsultarEvento);
-            this.Name = "frm_Consultar_Eventos";
+            this.Name = "frm_ConsultarEventos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_Consultar_Eventos";
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_ConsultarEvento)).EndInit();
             this.ResumeLayout(false);
@@ -154,7 +159,7 @@
 
         private System.Windows.Forms.Button btn_pesqusiarCliente;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtBox_PesquisarEvento;
+        private System.Windows.Forms.TextBox txt_BuscarEvento;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_excluir;
         private System.Windows.Forms.Button btn_adicionar;
