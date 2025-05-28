@@ -30,18 +30,19 @@ namespace orgEventos1
                 cliente = cliente_DAO.ObtemCliente(codigo);
 
 
-                if (cliente != null)
+                if (cliente == null)
                 {
                     MessageBox.Show("Cliente nao encontrado", "ATENCAO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     this.Close();
 
                 }
 
+
                 txt_nomeCliente.Text = cliente.nome;
                 msktx_cpfCli.Text = cliente.cpf;
                 msktx_telefoneCli.Text = cliente.telefone;
                 txt_emailCliente.Text = cliente.email;
-                datPick_nascCli.Text = cliente.nome;
+                datPick_nascCli.Value = cliente.dataNasc;
                 txt_logradouro.Text = cliente.logradouro;
                 txt_numLogradouro.Text = cliente.numLogradouro;
                 txt_complemento.Text = cliente.complemento;
