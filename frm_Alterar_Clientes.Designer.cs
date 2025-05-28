@@ -49,6 +49,8 @@
             this.txt_nomeCliente = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -260,12 +262,33 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Alterar cliente";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(872, 31);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(123, 33);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "Código :";
+            // 
+            // label10
+            // 
+            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(1001, 30);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(70, 33);
+            this.label10.TabIndex = 11;
+            // 
             // frm_Alterar_Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1167, 595);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.btn_SairCadCli);
             this.Controls.Add(this.btn_AddCli);
             this.Controls.Add(this.groupBox2);
@@ -306,5 +329,7 @@
         private System.Windows.Forms.TextBox txt_nomeCliente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }
