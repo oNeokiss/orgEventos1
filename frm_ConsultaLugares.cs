@@ -57,7 +57,18 @@ namespace orgEventos1
 
         private void btn_EditarLugar_Click(object sender, EventArgs e)
         {
+            if (dtgv_ConsultarLugar.SelectedRows.Count > 0)
+            {
+                int codigo = Convert.ToInt32(dtgv_ConsultarLugar.CurrentRow.Cells[0].Value);
+                frm_Alterar_Lugar frm_Alterar_Lugar = new frm_Alterar_Lugar();
+                frm_Alterar_Lugar.ShowDialog();
+                ListarLugar();
+            }
 
+            else
+            {
+                MessageBox.Show("Selecione um registro para alterações!", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btn_DelLugar_Click(object sender, EventArgs e)
