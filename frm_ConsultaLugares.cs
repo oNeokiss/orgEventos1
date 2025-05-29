@@ -60,7 +60,7 @@ namespace orgEventos1
             if (dtgv_ConsultarLugar.SelectedRows.Count > 0)
             {
                 int codigo = Convert.ToInt32(dtgv_ConsultarLugar.CurrentRow.Cells[0].Value);
-                frm_Alterar_Lugar frm_Alterar_Lugar = new frm_Alterar_Lugar();
+                frm_Alterar_Lugar frm_Alterar_Lugar = new frm_Alterar_Lugar(codigo);
                 frm_Alterar_Lugar.ShowDialog();
                 ListarLugar();
             }

@@ -40,6 +40,8 @@
             this.txtbox_nomeTrab = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lbl_cod = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,6 +65,7 @@
             this.btn_AddTrab.TabIndex = 9;
             this.btn_AddTrab.Text = "Adicionar";
             this.btn_AddTrab.UseVisualStyleBackColor = true;
+            this.btn_AddTrab.Click += new System.EventHandler(this.btn_AddTrab_Click);
             // 
             // groupBox1
             // 
@@ -160,12 +163,33 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Alteração de Trabalhadores";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(915, 45);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(123, 33);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Código :";
+            // 
+            // lbl_cod
+            // 
+            this.lbl_cod.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbl_cod.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_cod.Location = new System.Drawing.Point(1028, 45);
+            this.lbl_cod.Name = "lbl_cod";
+            this.lbl_cod.Size = new System.Drawing.Size(85, 33);
+            this.lbl_cod.TabIndex = 12;
+            // 
             // frm_Alterar_Trabalhadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1167, 367);
+            this.Controls.Add(this.lbl_cod);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btn_SairCadTrab);
             this.Controls.Add(this.btn_AddTrab);
             this.Controls.Add(this.groupBox1);
@@ -194,5 +218,7 @@
         private System.Windows.Forms.TextBox txtbox_nomeTrab;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbl_cod;
     }
 }

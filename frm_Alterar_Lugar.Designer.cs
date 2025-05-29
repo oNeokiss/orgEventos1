@@ -49,6 +49,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.lbl_cod = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.msktb_precoLugar.SuspendLayout();
             this.SuspendLayout();
@@ -62,6 +64,7 @@
             this.btn_Cadastrar.TabIndex = 8;
             this.btn_Cadastrar.Text = "Cadastrar";
             this.btn_Cadastrar.UseVisualStyleBackColor = true;
+            this.btn_Cadastrar.Click += new System.EventHandler(this.btn_Cadastrar_Click);
             // 
             // btn_sair
             // 
@@ -268,12 +271,33 @@
             this.label9.TabIndex = 10;
             this.label9.Text = "Alterar Lugar";
             // 
+            // lbl_cod
+            // 
+            this.lbl_cod.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbl_cod.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_cod.Location = new System.Drawing.Point(921, 47);
+            this.lbl_cod.Name = "lbl_cod";
+            this.lbl_cod.Size = new System.Drawing.Size(85, 33);
+            this.lbl_cod.TabIndex = 14;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(808, 47);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(123, 33);
+            this.label11.TabIndex = 13;
+            this.label11.Text = "Código :";
+            // 
             // frm_Alterar_Lugar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1167, 595);
+            this.Controls.Add(this.lbl_cod);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.msktb_precoLugar);
             this.Controls.Add(this.label9);
@@ -314,5 +338,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lbl_cod;
+        private System.Windows.Forms.Label label11;
     }
 }

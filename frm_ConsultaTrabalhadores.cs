@@ -88,6 +88,27 @@ namespace orgEventos1
         private void btn_EditarTrabalhador_Click(object sender, EventArgs e)
         {
 
+            if (dtgv_ConsultarTrabalhador.SelectedRows.Count > 0)
+            {
+                int codigo = Convert.ToInt32(dtgv_ConsultarTrabalhador.SelectedRows.Count > 0);
+
+                frm_Alterar_Trabalhadores frm_Alterar_Trabalhadores = new frm_Alterar_Trabalhadores(codigo);
+                frm_Alterar_Trabalhadores.ShowDialog();
+
+                ListarTrabalhador();
+
+            }
+
+            else
+            {
+                MessageBox.Show("Selecione um registro para alteração!",
+                    "Atenção",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+            }
+
+
         }
 
         private void btn_pesquisarTrabalhador_Click(object sender, EventArgs e)

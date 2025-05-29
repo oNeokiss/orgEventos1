@@ -44,6 +44,24 @@ namespace orgEventos1
 
         private void btn_EditarServico_Click(object sender, EventArgs e)
         {
+            if (dtgv_ConsultarServico.SelectedRows.Count > 0)
+            {
+                int codigo = Convert.ToInt32(dtgv_ConsultarServico.CurrentRow.Cells[0].Value);
+
+                frm_Alterar_Servico frm_alterar_servico = new frm_Alterar_Servico(codigo);
+                frm_alterar_servico.ShowDialog();
+
+                ListarServico();
+
+            }
+
+            else
+            {
+                MessageBox.Show("Selecione um registro para alteração!",
+                    "Atenção",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+            }
 
         }
 

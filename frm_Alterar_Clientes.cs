@@ -83,7 +83,7 @@ namespace orgEventos1
 
                     cliente_DAO.AlterarCliente(cliente);
 
-                    MessageBox.Show("Cadastro com Sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Alterado com Sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     this.Close();
                 }
